@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: 0.5s all;
+}
+
+::selection {
+  background-color: lightskyblue;
+  color: rgb(0, 0, 0);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: aliceblue;
+  display: none;
+}
+
+header,
+footer {
+  height: auto;
+  padding: 1em;
+  background-color: grey;
+  color: white;
+  display: flex;
+}
+
+header {
+  background-color: rgba(255, 255, 255, 0);
+  background-image: url(./pattern.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #000000;
+  background-repeat: no-repeat;
+  height: fit-content;
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
+header h1 {
+  text-align: center;
+  display: block;
+  margin: auto;
+  font-size: 40px;
+  padding: 1em;
+  cursor: default;
+  animation: d 1000ms alternate linear infinite;
+  font-weight: bold;
+}
+footer {
+  padding: 1em;
+  height: 100px;
+  background-color: grey;
+  color: white;
+  display: flex;
+  justify-content: space-between; /* Rozloží odkazy a text ve zápatí */
+  align-items: center; /* Zarovná obsah do středu */
+}
+
+footer a {
+  text-decoration: none;
+  color: rgb(206, 205, 205);
+  transition: 0.5s;
+}
+
+#container {
+  background-image: url(../MainPage/pattern.jpg);
+  background-repeat: repeat;
+  background-position: center;
+  background-size: 1%;
+  background-color: #000000c5;
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: auto;
+  width: 100%;
+  flex-direction: column;
+}
+
+#content {
+  height: auto;
+  width: 100%;
+  display: block;
+  margin: auto;
+  padding: 1em;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 5px 0 5px 0 25px rgb(0, 225, 255);
+}
+#content h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 180px;
+  font-size: xx-large;
+  background-color: rgba(150, 123, 123, 0.658);
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 3px solid rgb(0, 0, 0);
+}
+article {
+  background-color: white;
+  display: flex;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: auto;
+  flex-direction: row;
+}
+
+article #leftBoxArticle {
+  width: 50%;
+  padding: 1em;
+}
+article #rightBoxArticle {
+  width: 50%;
+  padding: 1em;
+}
+#leftBoxArticle,
+#rightBoxArticle {
+  border: 3px solid rgb(194, 194, 194);
+  background-color: rgb(255, 255, 255);
+  margin: 10px;
+}
+
+.first-word {
+  color: rgb(0, 225, 255);
+  font-weight: bold;
+  font-size: x-large;
+}
+
+article #randomImagesBoxArticle {
+  width: 50%;
+  padding: 1em;
+}
+
+#randomImagesBoxArticle {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  margin-bottom: 30px;
+}
+
+#randomImagesBoxArticle #randomImagesBoxArticleText {
+  position: relative;
+  top: 500px;
+  text-align: center;
+  z-index: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  background-color: rgb(0, 225, 255);
+  color: #000000;
+  overflow: hidden;
+  text-align: center;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  text-transform: uppercase;
+}
+
+nav li a {
+  text-decoration: none;
+  display: inline-block;
+  color: #000000;
+  font-size: 17px;
+  padding: 20px;
+  transition: 0.5s ease;
+}
+
+.fix {
+  position: sticky;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+nav li a:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+}
+.subnav {
+  display: none;
+  position: absolute;
+  width: 300px;
+  height: auto;
+  text-align: center;
+  margin: auto;
+  background-color: rgba(0, 225, 255, 0.838);
+}
+
+nav ul li:hover .subnav {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+}
+/*RESPONSIVITA*/
+
+@media screen and (min-width: 768px) {
+  nav ul li {
+    width: 300px;
+    margin: auto;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .fix {
+    position: static;
+    width: auto;
+  }
+
+  .fix ul {
+    border: none;
+  }
+
+  article {
+    flex-direction: column;
+    width: 100%;
+  }
+  article #leftBoxArticle {
+    width: 100%;
+    padding: 0.5em;
+  }
+  article #rightBoxArticle {
+    width: 100%;
+    padding: 1em;
+  }
+  article #randomImagesBoxArticle {
+    width: 100%;
+    padding: 0.5em;
+  }
+  .subnav {
+    display: block; /* Zobrazit subnavigaci vždy */
+    position: static; /* Vrátit pozici na statickou */
+    width: auto; /* Nechat šířku automatickou */
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul li .subnav {
+    display: block; /* Zobrazit všechny podnavigace vždy */
+  }
+
+  footer {
+    flex-direction: column; /* Změní uspořádání na sloupcové v mobilním režimu */
+    align-items: flex-start; /* Zarovná obsah doleva */
+  }
+
+  footer .text {
+    margin-top: 1em; /* Přidejte odsazení shora pro oddělení od odkazů */
+  }
+}
