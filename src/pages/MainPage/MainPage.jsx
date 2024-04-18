@@ -2,17 +2,17 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import "./MainPage.css";
-import Picture from "./box2.jpg";
-import PictureTwo from "./box2two.jpg";
-import PictureThree from "./box2three.jpg";
-import PictureFour from "./box2four.jpg";
+import Picture from "./ventilace1.png";
+import PictureTwo from "./ventilace2.png";
+import PictureThree from "./ventilace3.png";
+import PictureFour from "./ventilace4.png";
 
 export default function MainPage() {
   const [currentImage, setCurrentImage] = useState("");
   const [currentText, setCurrentText] = useState("");
 
   const images = [Picture, PictureTwo, PictureThree, PictureFour];
-  const texts = ["mrakodrap", "cokl", "banan", "nevim"];
+  const texts = ["první ventilace", "druhá ventilace", "třetí ventilace", "čtvrtá ventilace"];
 
   useEffect(() => {
     const changeContent = () => {

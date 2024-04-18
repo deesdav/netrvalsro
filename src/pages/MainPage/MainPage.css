@@ -147,15 +147,19 @@ article #randomImagesBoxArticle {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 500px;
+  height: 680px;
   margin-bottom: 30px;
 }
 
 #randomImagesBoxArticle #randomImagesBoxArticleText {
   position: relative;
-  top: 500px;
+  top: 682px;
   text-align: center;
   z-index: 0;
+  color: rgb(0, 0, 0);
+  background-color: #00d0ff;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 nav ul {
