@@ -32,8 +32,7 @@ footer {
 }
 
 header {
-  background-color: rgba(255, 255, 255, 0);
-  background-image: url(./pattern.jpg);
+  background-color: rgb(255, 255, 255);
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -72,11 +71,12 @@ footer a {
 }
 
 #container {
-  background-image: url(../MainPage/pattern.jpg);
-  background-repeat: repeat;
+  background-image: url(./pattern.jpg);
   background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   background-size: 1%;
-  background-color: #000000c5;
+  background-color: rgb(255, 255, 255);
   display: flex;
   flex-wrap: wrap;
   flex-basis: auto;
@@ -92,6 +92,9 @@ footer a {
   padding: 1em;
   background-color: rgb(255, 255, 255);
   box-shadow: 5px 0 5px 0 25px rgb(0, 225, 255);
+  background-image: url(./pattern.jpg);
+  background-position: center;
+  background-repeat: repeat;
 }
 #content h2 {
   display: flex;
@@ -100,14 +103,14 @@ footer a {
   text-align: center;
   height: 180px;
   font-size: xx-large;
-  background-color: rgba(150, 123, 123, 0.658);
+  background-color: rgb(188, 160, 160);
   color: white;
   font-weight: bold;
   text-transform: uppercase;
   border: 3px solid rgb(0, 0, 0);
 }
 article {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0);
   display: flex;
   height: auto;
   justify-content: center;
@@ -248,9 +251,9 @@ nav ul li:hover .subnav {
     padding: 0.5em;
   }
   .subnav {
-    display: block; /* Zobrazit subnavigaci vždy */
-    position: static; /* Vrátit pozici na statickou */
-    width: auto; /* Nechat šířku automatickou */
+    display: block;
+    position: static;
+    width: auto;
     background-color: rgba(255, 255, 255, 0);
   }
 
@@ -260,15 +263,11 @@ nav ul li:hover .subnav {
   }
 
   nav ul li .subnav {
-    display: block; /* Zobrazit všechny podnavigace vždy */
+    display: block;
   }
 
   footer {
-    flex-direction: column; /* Změní uspořádání na sloupcové v mobilním režimu */
-    align-items: flex-start; /* Zarovná obsah doleva */
-  }
-
-  footer .text {
-    margin-top: 1em; /* Přidejte odsazení shora pro oddělení od odkazů */
+    margin-top: 1em;
+    align-items: flex-start;
   }
 }
