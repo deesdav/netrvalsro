@@ -214,6 +214,19 @@ nav ul li:hover .subnav {
   color: rgb(255, 255, 255);
   text-decoration: underline;
 }
+
+#bottomLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: -30px;
+  width: 100%;
+  height: auto;
+  font-size: large;
+  padding: 1em;
+}
+
 /*RESPONSIVITA*/
 
 @media screen and (min-width: 768px) {
