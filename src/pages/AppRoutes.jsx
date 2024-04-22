@@ -6,8 +6,14 @@ import References from "./References/References";
 import Industry from "./Disciplines/Industry/Industry";
 import Skoda from "./Disciplines/Skoda/Skoda";
 import "../App.css";
+import { React, useEffect } from "react";
 
 export default function AppRoutes() {
+  useEffect(() => {
+    if (window.location.pathname !== "/") {
+      window.location.href = "/";
+    }
+  }, []);
   return (
     <>
       <BrowserRouter>
