@@ -12,13 +12,15 @@ export default function Contacts() {
             <div id="leftBoxArticle">
               Pro více informací nás kontaktujte na následujících údajích:
               <br />
-              email: tomas@netrval.net
+              Email: tomas@netrval.net
               <br />
-              tel: 603 832 589
+              Tel: 603 832 589
               <br />
-              fax: 326 733 027
+              Fax: 326 733 027
               <br />
-              adresa: Žižkova 503, 293 01 Mladá Boleslav
+              Adresa: Jabkenice 209, 294 45 Jabkenice
+              <br /> 
+              Kancelář: Palackého 455, Mladá Boleslav
               <br />
             </div>
             <div id="rightBoxArticle">

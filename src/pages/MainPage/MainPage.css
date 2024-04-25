@@ -32,16 +32,19 @@ footer {
 }
 
 header {
-  background-color: rgb(255, 255, 255);
-  background-position: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-image: url(./headerBG.jpg);
+  background-position: bottom;
   background-attachment: fixed;
   background-size: cover;
   color: #000000;
   background-repeat: no-repeat;
-  height: fit-content;
+  height: 800px;
   width: auto;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: row;
 }
 
 header h1 {
@@ -49,10 +52,23 @@ header h1 {
   display: block;
   margin: auto;
   font-size: 40px;
+  width: 100%;
   padding: 1em;
   cursor: default;
-  animation: d 1000ms alternate linear infinite;
   font-weight: bold;
+}
+header p {
+  text-align: center;
+  display: block;
+  margin: auto;
+  width: 100%;
+  padding: 1em;
+  cursor: default;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.752);
+  border-radius: 10px 0 0 10px;
 }
 footer {
   padding: 1em;
@@ -103,7 +119,8 @@ footer a {
   text-align: center;
   height: 180px;
   font-size: xx-large;
-  background-color: rgb(188, 160, 160);
+  /* background-color: rgb(188, 160, 160);*/
+  background-color: rgba(255, 191, 0, 0.806);
   color: white;
   font-weight: bold;
   text-transform: uppercase;
@@ -136,39 +153,40 @@ article #rightBoxArticle {
 }
 
 .first-word {
-  color: rgb(0, 225, 255);
+  color: rgb(255, 191, 0);
   font-weight: bold;
   font-size: x-large;
 }
 
 article #randomImagesBoxArticle {
-  width: 50%;
+  width: 900px;
+  height: 450px;
   padding: 1em;
 }
 
 #randomImagesBoxArticle {
-  background-position: center;
-  background-size: cover;
+  background-position: center center;
   background-repeat: no-repeat;
-  height: 680px;
+  background-size: cover;
   margin-bottom: 30px;
+  border-radius: 10px;
 }
 
 #randomImagesBoxArticle #randomImagesBoxArticleText {
   position: relative;
-  top: 682px;
+  top: 450px;
   text-align: center;
   z-index: 0;
   color: rgb(0, 0, 0);
-  background-color: #00d0ff;
+  background-color: rgb(255, 191, 0);
   text-transform: uppercase;
   font-weight: bold;
 }
 
 nav ul {
   list-style-type: none;
-  background-color: rgb(0, 225, 255);
-  color: #000000;
+  background-color: #ffffffbd;
+  color: #ffffff;
   overflow: hidden;
   text-align: center;
   list-style-type: none;
@@ -181,13 +199,14 @@ nav li a {
   text-decoration: none;
   display: inline-block;
   color: #000000;
-  font-size: 17px;
-  padding: 20px;
+  padding: 19px;
   transition: 0.5s ease;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .fix {
-  position: sticky;
+  position: fixed;
   padding: 0;
   margin: 0;
   top: 0;
@@ -196,17 +215,17 @@ nav li a {
 }
 
 nav li a:hover {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   text-decoration: underline;
 }
 .subnav {
   display: none;
   position: absolute;
-  width: 300px;
+  width: 190px;
   height: auto;
   text-align: center;
   margin: auto;
-  background-color: rgba(0, 225, 255, 0.838);
+  background-color: #ffffffbd;
 }
 
 nav ul li:hover .subnav {
@@ -231,9 +250,10 @@ nav ul li:hover .subnav {
 
 @media screen and (min-width: 768px) {
   nav ul li {
-    width: 300px;
     margin: auto;
+    height: min-content;
     display: inline-block;
+    width: 190px;
   }
 }
 
@@ -246,7 +266,15 @@ nav ul li:hover .subnav {
   .fix ul {
     border: none;
   }
-
+  header {
+    flex-direction: column;
+    height: 400px;
+  }
+  header p {
+    position: relative;
+    top: 38px;
+    border-radius: 0px 0px 0px 0px;
+  }
   article {
     flex-direction: column;
     width: 100%;
@@ -282,5 +310,9 @@ nav ul li:hover .subnav {
   footer {
     margin-top: 1em;
     align-items: flex-start;
+  }
+  #randomImagesBoxArticleText {
+    font-size: 10.8px;
+    width: auto;
   }
 }

@@ -2,17 +2,39 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import "./MainPage.css";
-import Picture from "./ventilace1.png";
-import PictureTwo from "./ventilace2.png";
-import PictureThree from "./ventilace3.png";
-import PictureFour from "./ventilace4.png";
+import Picture from "./ateliertsunami.png";
+import PictureTwo from "./bilfidenteobodin.png";
+import PictureThree from "./grebener.png";
+import PictureFour from "./hlavacekarchitekti.png";
+import PictureFive from "./josyma.png";
+import PictureSix from "./marafinal.png";
+import PictureSeven from "./rubypm.png";
+import PictureEight from "./servisautomatik.png";
 
 export default function MainPage() {
   const [currentImage, setCurrentImage] = useState("");
   const [currentText, setCurrentText] = useState("");
 
-  const images = [Picture, PictureTwo, PictureThree, PictureFour];
-  const texts = ["první ventilace", "druhá ventilace", "třetí ventilace", "čtvrtá ventilace"];
+  const images = [
+    Picture,
+    PictureTwo,
+    PictureThree,
+    PictureFour,
+    PictureFive,
+    PictureSix,
+    PictureSeven,
+    PictureEight,
+  ];
+  const texts = [
+    "ATELIER Tsunami s.r.o. Náchod",
+    "Bilfinger Tebodin Czech Republic s.r.o., Praha",
+    "GREBNER projektová a inženýrská kancelář, spol. s r.o., Praha",
+    "Hlaváček-architekti s.r.o., Praha",
+    "JOSYMA MB, s.r.o., Kosmonosy",
+    "MaRfinal s.r.o., Sadová",
+    "RUBY Project Management s.r.o., Praha",
+    "Servis Automatik s.r.o.,  Kosmonsy ",
+  ];
 
   useEffect(() => {
     const changeContent = () => {
@@ -23,7 +45,7 @@ export default function MainPage() {
 
     changeContent();
 
-    const intervalId = setInterval(changeContent, 1000);
+    const intervalId = setInterval(changeContent, 2000);
 
     return () => clearInterval(intervalId);
   }, [images, texts]);
@@ -32,7 +54,13 @@ export default function MainPage() {
     <div id="container">
       <div id="one"></div>
       <header>
-        <h1>NETRVAL S.R.O.</h1>
+        <h1>NETRVAL s.r.o.</h1>
+        <p>
+          <span className="first-word">Vítejte</span> na webových stránkách
+          společnosti NETRVAL s.r.o.! Jsme váš partner v oblasti
+          elektroinženýrství, přinášíme inovativní a spolehlivá řešení pro vaše
+          elektrotechnické projekty.
+        </p>
       </header>
       <div className="fix">
         <nav>
@@ -63,14 +91,10 @@ export default function MainPage() {
           </ul>
         </nav>
       </div>
-
       <div id="content">
         <article id="homePageArticle">
           <div id="leftBoxArticle">
-            <span className="first-word">Vítejte</span> na stránkách společnosti
-            NETRVAL S.R.O. Nabízíme širokou škálu zvukových technologií,
-            osvětlovacích systémů, profesionálních mixážních pultů a
-            audiovizuálního vybavení pro vaše události a projekty.
+            Zde jsou zákazníci a firmy se kterými spolupracujeme:
           </div>
           <div
             id="randomImagesBoxArticle"
