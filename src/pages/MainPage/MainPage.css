@@ -54,7 +54,6 @@ header h1 {
   font-size: 40px;
   width: 100%;
   padding: 1em;
-  cursor: default;
   font-weight: bold;
 }
 header p {
@@ -63,7 +62,6 @@ header p {
   margin: auto;
   width: 100%;
   padding: 1em;
-  cursor: default;
   font-size: 16px;
   font-weight: bold;
   color: rgb(255, 255, 255);
@@ -100,33 +98,55 @@ footer a {
   flex-direction: column;
 }
 
-#content {
+#mainContent {
   height: auto;
   width: 100%;
-  display: block;
   margin: auto;
   padding: 1em;
   background-color: rgb(255, 255, 255);
-  box-shadow: 5px 0 5px 0 25px rgb(0, 225, 255);
   background-image: url(./pattern.jpg);
   background-position: center;
   background-repeat: repeat;
 }
-#content h2 {
+#subContent {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  background-image: url(./pattern.jpg);
+  background-position: center;
+  background-repeat: repeat;
+}
+
+#subContent article {
+  display: flex;
+  flex-wrap: wrap;
+  width: 20%;
+}
+
+#subContent article h2 {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 180px;
-  font-size: xx-large;
+  height: 70px;
   /* background-color: rgb(188, 160, 160);*/
   background-color: rgba(255, 191, 0, 0.806);
   color: white;
   font-weight: bold;
   text-transform: uppercase;
-  border: 3px solid rgb(0, 0, 0);
+  padding: 10px;
 }
-article {
+#subContent article p {
+  font-size: small;
+  padding: 10px;
+}
+#subContent article #leftBoxArticle,
+#rightBoxArticle {
+  border: 3px solid rgb(194, 194, 194);
+  background-color: rgb(255, 255, 255);
+  margin: 10px;
+}
+#mainContent article {
   background-color: rgba(255, 255, 255, 0);
   display: flex;
   height: auto;
@@ -134,24 +154,37 @@ article {
   align-items: center;
   padding: 20px;
   margin: auto;
+  width: fit-content;
   flex-direction: row;
 }
 
-article #leftBoxArticle {
+#mainContent article #leftBoxArticle {
   width: 50%;
   padding: 1em;
 }
-article #rightBoxArticle {
+#mainContent article #rightBoxArticle {
   width: 50%;
   padding: 1em;
 }
-#leftBoxArticle,
+#mainContent #leftBoxArticle,
 #rightBoxArticle {
   border: 3px solid rgb(194, 194, 194);
   background-color: rgb(255, 255, 255);
   margin: 10px;
 }
-
+#mainContent article h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 70px;
+  /* background-color: rgb(188, 160, 160);*/
+  background-color: rgba(255, 191, 0, 0.806);
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px;
+}
 .first-word {
   color: rgb(255, 191, 0);
   font-weight: bold;
@@ -234,18 +267,64 @@ nav ul li:hover .subnav {
   text-decoration: underline;
 }
 
-#bottomLink {
+#subPagesContent {
+  background-image: url(./pattern.jpg);
+  background-color: #ff0000;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: repeat;
+  padding: 20px;
+  height: 100vh;
+}
+#subPagesContent article {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+#subPagesContent article h2 {
+  border: 3px solid rgb(194, 194, 194);
+  background-color: rgba(255, 191, 0, 0.806);
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 10px;
+  font-size: xx-large;
+}
+
+#subPagesContent article #leftBoxArticle {
+  border: 3px solid rgb(194, 194, 194);
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  margin: 10px;
+}
+#subPagesContent article #rightBoxArticle {
+  border: 3px solid rgb(194, 194, 194);
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  margin: 10px;
+}
+#subPagesContent article #bottomLink {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  bottom: -30px;
-  width: 100%;
+  position: fixed;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  font-size: x-large;
+  padding: 10px;
   height: auto;
-  font-size: large;
-  padding: 1em;
+  font-size: larg e;
+  border: 3px solid rgb(194, 194, 194);
+  background-color: rgb(255, 255, 255);
 }
-
+#subPagesContent article #bottomLink:hover {
+  text-decoration: underline;
+}
+#moreInfo:hover {
+  text-decoration: underline;
+}
 /*RESPONSIVITA*/
 
 @media screen and (min-width: 768px) {
@@ -257,7 +336,7 @@ nav ul li:hover .subnav {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 968px) {
   .fix {
     position: static;
     width: auto;
@@ -275,22 +354,45 @@ nav ul li:hover .subnav {
     top: 38px;
     border-radius: 0px 0px 0px 0px;
   }
-  article {
+
+  #subPagesContent article #bottomLink {
+    position: static;
+    left: 0%;
+    transform: translateX(12%);
+    font-size: small;
+    padding: 0;
+    margin: 10px 0px;
+  }
+
+  #mainContent {
     flex-direction: column;
-    width: 100%;
   }
-  article #leftBoxArticle {
+  #mainContent article {
     width: 100%;
-    padding: 0.5em;
+    flex-direction: column;
   }
-  article #rightBoxArticle {
+  #mainContent article #leftBoxArticle {
     width: 100%;
-    padding: 1em;
+    flex-direction: column;
   }
-  article #randomImagesBoxArticle {
+  #mainContent article #randomImagesBoxArticle {
     width: 100%;
-    padding: 0.5em;
+    flex-direction: column;
   }
+  #subContent {
+    flex-direction: column;
+  }
+  #subContent article {
+    width: 85%;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  /*#subContent article #leftBoxArticle{
+    width: 100%;
+    flex-direction: column;
+  }*/
+
   .subnav {
     display: block;
     position: static;

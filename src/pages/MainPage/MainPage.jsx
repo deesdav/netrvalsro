@@ -69,29 +69,29 @@ export default function MainPage() {
               <a href="#one">Domovská stránka</a>
             </li>
             <li>
-              <a style={{ cursor: "default" }}>Obory</a>
+              <a href="#two">Obory</a>
               <ul className="subnav">
                 <li>
-                  <a href="#two">Zdravotnictví</a>
+                  <Link to="/disciplines/healthcare">Zdravotnictví</Link>
                 </li>
                 <li>
-                  <a href="#three">ŠKODA</a>
+                  <Link to="/disciplines/skoda">ŠKODA AUTO</Link>
                 </li>
                 <li>
-                  <a href="#four">Průmysl</a>
+                  <Link to="/disciplines/industry">Průmysl</Link>
                 </li>
               </ul>
             </li>
             <li>
-              <a href="#five">Reference</a>
+              <Link to="/references">Reference</Link>
             </li>
             <li>
-              <a href="#six">Kontakty</a>
+              <Link to="/contacts">Kontakty</Link>
             </li>
           </ul>
         </nav>
       </div>
-      <div id="content">
+      <div id="mainContent">
         <article id="homePageArticle">
           <div id="leftBoxArticle">
             Zde jsou zákazníci a firmy se kterými spolupracujeme:
@@ -104,81 +104,78 @@ export default function MainPage() {
           </div>
           <div id="two"></div>
         </article>
-        <hr />
-        <h2>Zdravotnictví</h2>
-        <hr />
-        <article style={{ width: "100%" }} id="disciplinesHealthcareArticle">
+      </div>
+      <div id="subContent">
+        <article id="disciplinesHealthcareArticle">
           <div id="leftBoxArticle">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem,
-            at? Doloribus facere, at, eligendi aliquid excepturi nostrum dolor
-            optio ipsum numquam quo ab provident expedita odio, adipisci quis
-            quia a!
-          </div>
-          <div id="rightBoxArticle">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem,
-            at? Doloribus facere, at, eligendi aliquid excepturi nostrum dolor
-            optio ipsum numquam quo ab provident expedita odio, adipisci quis
-            quia a!
+            <h2>Zdravotnictví</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatem, at? Doloribus facere, at, eligendi aliquid excepturi
+              nostrum dolor optio ipsum numquam quo ab provident expedita odio,
+              adipisci quis quia a!
+            </p>
+            <Link id="moreInfo" to={"/disciplines/healthcare"}>
+              Více informací
+            </Link>
           </div>
           <div id="three"></div>
         </article>
-        <hr />
-        <h2>ŠKODA AUTO</h2>
-        <hr />
-        <article style={{ width: "100%" }} id="disciplinesSkodaArticle">
+        <article id="disciplinesSkodaArticle">
           <div id="leftBoxArticle">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem,
-            at? Doloribus facere, at, eligendi aliquid excepturi nostrum dolor
-            optio ipsum numquam quo ab provident expedita odio, adipisci quis
-            quia a!
-          </div>
-          <div id="rightBoxArticle">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem,
-            at? Doloribus facere, at, eligendi aliquid excepturi nostrum dolor
-            optio ipsum numquam quo ab provident expedita odio, adipisci quis
-            quia a!
+            <h2>ŠKODA AUTO</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatem, at? Doloribus facere, at, eligendi aliquid excepturi
+              nostrum dolor optio ipsum numquam quo ab provident expedita odio,
+              adipisci quis quia a!
+            </p>
+            <Link id="moreInfo" to={"/disciplines/skoda"}>
+              Více informací
+            </Link>
           </div>
           <div id="four"></div>
         </article>
-        <hr />
-        <h2>Průmysl</h2>
-        <hr />
-        <article style={{ width: "100%" }} id="disciplinesIndustryArticle">
+        <article id="disciplinesIndustryArticle">
           <div id="leftBoxArticle">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem,
-            at? Doloribus facere, at, eligendi aliquid excepturi nostrum dolor
-            optio ipsum numquam quo ab provident expedita odio, adipisci quis
-            quia a!
-          </div>
-          <div id="rightBoxArticle">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem,
-            at? Doloribus facere, at, eligendi aliquid excepturi nostrum dolor
-            optio ipsum numquam quo ab provident expedita odio, adipisci quis
-            quia a!
+            <h2>Průmysl</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatem, at? Doloribus facere, at, eligendi aliquid excepturi
+              nostrum dolor optio ipsum numquam quo ab provident expedita odio,
+              adipisci quis quia a!
+            </p>
+            <Link id="moreInfo" to={"/disciplines/industry"}>
+              Více informací
+            </Link>
           </div>
           <div id="five"></div>
         </article>
-        <hr />
-        <h2>Reference</h2>
-        <hr />
+
         <article id="referencesArticle">
           <div id="leftBoxArticle">
-            <Link to={"/references"}>
+            <h2>Reference</h2>
+            <p>
               Zde naleznete přehled našich úspěšných projektů a spokojených
               zákazníků. Jsme hrdí na naši práci a rádi se s vámi podělíme o
               naše dosavadní úspěchy. Děkujeme vám za zájem o naše služby a
               těšíme se na možnost spolupráce
+            </p>
+            <Link id="moreInfo" to={"/references"}>
+              Více informací
             </Link>
           </div>
           <div id="six"></div>
         </article>
-        <hr />
-        <h2>Kontakty</h2>
-        <hr />
+
         <article id="contactsArticle">
           <div id="leftBoxArticle">
-            <Link to={"/contacts"}>
+            <h2>Kontakty</h2>
+            <p>
               Pro více informací nás kontaktujte na následujících údajích zde.
+            </p>
+            <Link id="moreInfo" to={"/contacts"}>
+              Více informací
             </Link>
           </div>
           <div id="seven"></div>
@@ -186,7 +183,7 @@ export default function MainPage() {
       </div>
       <footer>
         <div className="text">
-          Copyright © 2023 Netrval S.R.O. Všechna práva vyhrazena.
+          Copyright © 2024 Netrval S.R.O. Všechna práva vyhrazena.
         </div>
         <div>
           <a href="https://github.com/deesdav"> David Švancar</a>

@@ -4,11 +4,9 @@ export default function References() {
   return (
     <>
       <div id="container">
-        <div style={{ height: "100vh" }} id="content">
-          <hr />
-          <h2>Reference</h2>
-          <hr />
-          <article style={{ width: "100%" }} id="referencesArticle">
+        <div id="subPagesContent">
+          <article id="referencesArticle">
+            <h2>Reference</h2>
             <div id="leftBoxArticle">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
               numquam minus cumque odio quasi aut harum voluptas odit rerum
@@ -35,11 +33,11 @@ export default function References() {
               delectus deleniti excepturi, quas nostrum pariatur nihil
               architecto adipisci magnam aliquid ab facilis, ratione itaque
               incidunt corporis repellendus.
-            </div>
+            </div>{" "}
+            <Link id="bottomLink" to={"/"}>
+              Zpět na domovskou stránku
+            </Link>
           </article>
-          <Link id="bottomLink" to={"/"}>
-            Zpět na domovskou stránku
-          </Link>
         </div>
       </div>
     </>
