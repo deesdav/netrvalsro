@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import "./MainPage.css";
+/*
 import Picture from "./ateliertsunami.png";
 import PictureTwo from "./bilfidenteobodin.png";
 import PictureThree from "./grebener.png";
@@ -10,11 +11,8 @@ import PictureFive from "./josyma.png";
 import PictureSix from "./marafinal.png";
 import PictureSeven from "./rubypm.png";
 import PictureEight from "./servisautomatik.png";
-
-export default function MainPage() {
-  const [currentImage, setCurrentImage] = useState("");
-  const [currentText, setCurrentText] = useState("");
-
+*/
+/*
   const images = [
     Picture,
     PictureTwo,
@@ -24,6 +22,20 @@ export default function MainPage() {
     PictureSix,
     PictureSeven,
     PictureEight,
+  ];*/
+export default function MainPage() {
+  const [currentImage, setCurrentImage] = useState("");
+  const [currentText, setCurrentText] = useState("");
+
+  const images = [
+    "ateliertsunami",
+    "bilfidenteobodin",
+    "grebener",
+    "hlavacekarchitekti",
+    "josyma",
+    "marafinal",
+    "rubypm",
+    "servisautomatik",
   ];
   const texts = [
     "ATELIER Tsunami s.r.o. Náchod",
@@ -45,7 +57,7 @@ export default function MainPage() {
 
     changeContent();
 
-    const intervalId = setInterval(changeContent, 2000);
+    const intervalId = setInterval(changeContent, 3000);
 
     return () => clearInterval(intervalId);
   }, [images, texts]);
@@ -72,13 +84,13 @@ export default function MainPage() {
               <a href="#two">Obory</a>
               <ul className="subnav">
                 <li>
-                  <Link to="/disciplines/healthcare">Zdravotnictví</Link>
+                  <Link to="/healthcare">Zdravotnictví</Link>
                 </li>
                 <li>
-                  <Link to="/disciplines/skoda">ŠKODA AUTO</Link>
+                  <Link to="/skoda">ŠKODA AUTO</Link>
                 </li>
                 <li>
-                  <Link to="/disciplines/industry">Průmysl</Link>
+                  <Link to="/industry">Průmysl</Link>
                 </li>
               </ul>
             </li>
@@ -92,14 +104,34 @@ export default function MainPage() {
         </nav>
       </div>
       <div id="mainContent">
+        <h2>ČÍM SE ZABÝVÁME?</h2>
         <article id="homePageArticle">
+          <div id="leftBoxArticle">
+            <h3>Zabýváme se:</h3>
+            <ul>
+              <li>- projekce elektrických zařízení a řídících systémů </li>
+              <li>- Měření a Regulace</li>
+              <li>
+                - navrhujeme řídící systémy pro průmyslové
+                aplikace,administrativní objekty, nemocnice, letiště
+              </li>
+              <li> - silnoproudé rozvody</li>
+              <li>
+                - výpočty osvětlení, protokoly vnějších vlivů, pasportizace
+                stávajících elektroinstalací
+              </li>
+              <li>- veřejné osvětlení</li>
+              <li>- technická pomoc</li>
+            </ul>
+          </div>
+        </article>
+        <h2>SPOLUPRÁCE</h2>
+        <article id="cooperationPageArticle">
           <div id="leftBoxArticle">
             Zde jsou zákazníci a firmy se kterými spolupracujeme:
           </div>
-          <div
-            id="randomImagesBoxArticle"
-            style={{ backgroundImage: `url(${currentImage})` }}
-          >
+          <div id="randomImagesBoxArticle">
+            <img src={`./src/pages/MainPage/${currentImage}.png`} alt="photo" />
             <p id="randomImagesBoxArticleText">{currentText}</p>
           </div>
           <div id="two"></div>
@@ -115,7 +147,7 @@ export default function MainPage() {
               nostrum dolor optio ipsum numquam quo ab provident expedita odio,
               adipisci quis quia a!
             </p>
-            <Link id="moreInfo" to={"/disciplines/healthcare"}>
+            <Link id="moreInfo" to={"/healthcare"}>
               Více informací
             </Link>
           </div>
@@ -130,7 +162,7 @@ export default function MainPage() {
               nostrum dolor optio ipsum numquam quo ab provident expedita odio,
               adipisci quis quia a!
             </p>
-            <Link id="moreInfo" to={"/disciplines/skoda"}>
+            <Link id="moreInfo" to={"/skoda"}>
               Více informací
             </Link>
           </div>
@@ -145,7 +177,7 @@ export default function MainPage() {
               nostrum dolor optio ipsum numquam quo ab provident expedita odio,
               adipisci quis quia a!
             </p>
-            <Link id="moreInfo" to={"/disciplines/industry"}>
+            <Link id="moreInfo" to={"/industry"}>
               Více informací
             </Link>
           </div>

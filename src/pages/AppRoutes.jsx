@@ -20,11 +20,11 @@ export default function AppRoutes() {
         <Routes>
           <Route path="/" element={<MainPage></MainPage>} />
           <Route
-            path="/disciplines/healthcare"
+            path="/healthcare"
             element={<Healthcare></Healthcare>}
           />
-          <Route path="/disciplines/skoda" element={<Skoda></Skoda>} />
-          <Route path="/disciplines/industry" element={<Industry></Industry>} />
+          <Route path="/skoda" element={<Skoda></Skoda>} />
+          <Route path="/industry" element={<Industry></Industry>} />
 
           <Route path="/references" element={<References></References>} />
           <Route path="/contacts" element={<Contacts></Contacts>} />

@@ -108,6 +108,16 @@ footer a {
   background-position: center;
   background-repeat: repeat;
 }
+
+#mainContent h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  background-color: rgba(255, 191, 0, 0.806);
+}
+
 #subContent {
   display: flex;
   width: 100%;
@@ -162,6 +172,7 @@ footer a {
   width: 50%;
   padding: 1em;
 }
+
 #mainContent article #rightBoxArticle {
   width: 50%;
   padding: 1em;
@@ -172,18 +183,28 @@ footer a {
   background-color: rgb(255, 255, 255);
   margin: 10px;
 }
-#mainContent article h2 {
+#mainContent #homePageArticle {
+  background-color: rgba(255, 255, 255, 0);
   display: flex;
+  height: auto;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  height: 70px;
-  /* background-color: rgb(188, 160, 160);*/
-  background-color: rgba(255, 191, 0, 0.806);
-  color: white;
-  font-weight: bold;
-  text-transform: uppercase;
-  padding: 10px;
+  padding: 20px;
+  margin: auto;
+  width: 100%;
+  flex-direction: row;
+}
+
+#mainContent #homePageArticle #leftBoxArticle {
+  width: 100%;
+  padding: 1em;
+}
+#mainContent #homePageArticle #leftBoxArticle h3 {
+  font-size: x-large;
+}
+#mainContent #homePageArticle #leftBoxArticle ul {
+  list-style-type: none;
+  text-align: left;
 }
 .first-word {
   color: rgb(255, 191, 0);
@@ -191,29 +212,28 @@ footer a {
   font-size: x-large;
 }
 
-article #randomImagesBoxArticle {
-  width: 900px;
-  height: 450px;
-  padding: 1em;
-}
-
-#randomImagesBoxArticle {
+#mainContent article #randomImagesBoxArticle {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 30px;
   border-radius: 10px;
+  width: 50%;
+  padding: 1em;
+}
+
+#randomImagesBoxArticle img {
+  height: 450px;
+  width: 700px;
 }
 
 #randomImagesBoxArticle #randomImagesBoxArticleText {
-  position: relative;
-  top: 450px;
   text-align: center;
   z-index: 0;
   color: rgb(0, 0, 0);
   background-color: rgb(255, 191, 0);
   text-transform: uppercase;
   font-weight: bold;
+  width: 700px;
 }
 
 nav ul {
@@ -274,14 +294,14 @@ nav ul li:hover .subnav {
   background-attachment: fixed;
   background-repeat: repeat;
   padding: 20px;
-  height: 100vh;
+  height: 100%;
 }
 #subPagesContent article {
   display: flex;
   width: 100%;
-  flex-direction: column;
+  flex-direction: row;
 }
-#subPagesContent article h2 {
+#subPagesContent h2 {
   border: 3px solid rgb(194, 194, 194);
   background-color: rgba(255, 191, 0, 0.806);
   color: rgb(255, 255, 255);
@@ -296,18 +316,38 @@ nav ul li:hover .subnav {
   background-color: rgb(255, 255, 255);
   padding: 20px;
   margin: 10px;
+  width: 50%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
 }
 #subPagesContent article #rightBoxArticle {
   border: 3px solid rgb(194, 194, 194);
   background-color: rgb(255, 255, 255);
-  padding: 20px;
   margin: 10px;
-}
-#subPagesContent article #bottomLink {
+  width: 50%;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
+}
+#subPagesContent article #rightBoxArticle img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+#subPagesContent #bottomLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
   bottom: 5%;
   left: 50%;
   transform: translateX(-50%);
@@ -319,12 +359,18 @@ nav ul li:hover .subnav {
   border: 3px solid rgb(194, 194, 194);
   background-color: rgb(255, 255, 255);
 }
-#subPagesContent article #bottomLink:hover {
+#subPagesContent #bottomLink:hover {
   text-decoration: underline;
 }
 #moreInfo:hover {
   text-decoration: underline;
 }
+
+#contactsArticle #leftBoxArticle {
+  display: flex;
+  flex-direction: column;
+}
+
 /*RESPONSIVITA*/
 
 @media screen and (min-width: 768px) {
@@ -354,8 +400,39 @@ nav ul li:hover .subnav {
     top: 38px;
     border-radius: 0px 0px 0px 0px;
   }
+  #subPagesContent h2 {
+    margin: 10px auto;
+  }
+  #subPagesContent article:nth-child(even) {
+    flex-direction: column;
+  }
 
-  #subPagesContent article #bottomLink {
+  #subPagesContent article:nth-child(odd) {
+    flex-direction: column-reverse;
+  }
+
+  #subPagesContent article #leftBoxArticle {
+    border: 3px solid rgb(194, 194, 194);
+    background-color: rgb(255, 255, 255);
+    margin: 10px auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #subPagesContent article #rightBoxArticle {
+    border: 3px solid rgb(194, 194, 194);
+    background-color: rgb(255, 255, 255);
+    margin: 10px auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #subPagesContent #bottomLink {
     position: static;
     left: 0%;
     transform: translateX(12%);
@@ -375,9 +452,21 @@ nav ul li:hover .subnav {
     width: 100%;
     flex-direction: column;
   }
+
   #mainContent article #randomImagesBoxArticle {
     width: 100%;
     flex-direction: column;
+  }
+  #mainContent article #randomImagesBoxArticle img {
+    height: 225px;
+    width: 350px;
+    margin: auto;
+    flex-direction: column;
+  }
+  #randomImagesBoxArticle #randomImagesBoxArticleText {
+    font-size: 10.8px;
+    margin: auto;
+    width: 350px;
   }
   #subContent {
     flex-direction: column;
@@ -387,11 +476,6 @@ nav ul li:hover .subnav {
     flex-direction: column;
     margin: auto;
   }
-
-  /*#subContent article #leftBoxArticle{
-    width: 100%;
-    flex-direction: column;
-  }*/
 
   .subnav {
     display: block;
@@ -413,8 +497,5 @@ nav ul li:hover .subnav {
     margin-top: 1em;
     align-items: flex-start;
   }
-  #randomImagesBoxArticleText {
-    font-size: 10.8px;
-    width: auto;
-  }
+ 
 }

@@ -5,39 +5,85 @@ export default function Industry() {
     <>
       <div id="container">
         <div id="subPagesContent">
-          <article id="referencesArticle">
-            <h2>Průmysl</h2>
+          <h2>
+            <Link
+              style={{ color: "white", cursor: "pointer" }}
+              to={"/"}
+              title="zpět"
+            >
+              Průmysl
+            </Link>
+          </h2>
+          <article id="skodaArticle">
             <div id="leftBoxArticle">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-              numquam minus cumque odio quasi aut harum voluptas odit rerum
-              animi consequatur reiciendis nemo, distinctio facere quidem
-              ratione et. Totam, maiores. Lorem, ipsum dolor sit amet
-              consectetur adipisicing elit. Facere atque ipsum, voluptatum non
-              cupiditate dolores. Minus aliquam, tempora necessitatibus illum
-              voluptas architecto cupiditate hic at? Odio velit eveniet ea quae.
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore
-              ad at vel. Quo minus alias corrupti officiis beatae voluptatum
-              delectus illum eveniet quia, exercitationem doloremque, architecto
-              amet, accusamus aut sequi?
+              Škoda Auto Muzeum - rozšíření a přestavba, MaR, silnoproudé
+              rozvody
             </div>
             <div id="rightBoxArticle">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse
-              animi quam reprehenderit sint ratione tempora excepturi ipsam
-              repellendus. Mollitia, explicabo exercitationem delectus
-              doloremque praesentium iure! Minima dignissimos repellat expedita
-              aliquam. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Enim repellendus fuga libero quod illo sequi quidem optio
-              explicabo accusantium quos minus expedita similique, assumenda
-              dolorem commodi quia nulla voluptas delectus?Lorem ipsum, dolor
-              sit amet consectetur adipisicing elit. Dolorem commodi id fugiat
-              delectus deleniti excepturi, quas nostrum pariatur nihil
-              architecto adipisci magnam aliquid ab facilis, ratione itaque
-              incidunt corporis repellendus.
-            </div>{" "}
-            <Link id="bottomLink" to={"/"}>
-              Zpět na domovskou stránku
-            </Link>
+              <img src="./src/pages/MainPage/skodaMuzeum.png" alt="photo" />
+            </div>
           </article>
+          <article id="skodaArticle">
+            <div id="rightBoxArticle">
+              <img src="./src/pages/MainPage/skodaMuzeum.png" alt="photo" />
+            </div>
+            <div id="leftBoxArticle">Hala M14 - MaR, osvětlení</div>
+          </article>
+          <article id="skodaArticle">
+            <div id="leftBoxArticle">Hala M9 - MaR</div>
+            <div id="rightBoxArticle">
+              <img src="./src/pages/MainPage/skodaMuzeum.png" alt="photo" />
+            </div>
+          </article>
+          <article id="skodaArticle">
+            <div id="rightBoxArticle">
+              <img
+                src="./src/pages/MainPage/skodaNovýPentagon.png"
+                alt="photo"
+              />
+            </div>
+            <div id="leftBoxArticle">
+              Kampus Laurin a Klement - VZT zařízení, IRC regulace
+            </div>
+          </article>
+          <article id="skodaArticle">
+            <div id="leftBoxArticle">ŠPC / sklad HRC - osvětlení</div>
+            <div id="rightBoxArticle">
+              <img src="./src/pages/MainPage/ŠPC_sklad HRC.png" alt="photo" />
+            </div>
+          </article>
+          <article id="skodaArticle">
+            <div id="rightBoxArticle">
+              <img src="./src/pages/MainPage/LAKOVNA_1.jpg" alt="photo" />
+            </div>
+            <div id="leftBoxArticle">Lakovna M19</div>
+          </article>
+          <article id="skodaArticle">
+            <div id="leftBoxArticle">Pilot hala </div>
+            <div id="rightBoxArticle">
+              <img src="./src/pages/MainPage/pilotHala.png" alt="photo" />
+            </div>
+          </article>
+          <article id="skodaArticle">
+            <div id="rightBoxArticle">
+              <img
+                src="./src/pages/MainPage/HRL dopravníkové mosty.png"
+                alt="photo"
+              />
+            </div>
+            <div id="leftBoxArticle">
+              HRL dopravníkové mosty - silnoproud, inženýrské sítě
+            </div>
+          </article>
+          <article id="skodaArticle">
+            <div id="leftBoxArticle">CVV Česana - protipovodňová stěna</div>
+            <div id="rightBoxArticle">
+              <img src="./src/pages/MainPage/" alt="photo" />
+            </div>
+          </article>
+          <Link id="bottomLink" to={"/"}>
+            Zpět na domovskou stránku
+          </Link>
         </div>
       </div>
     </>
