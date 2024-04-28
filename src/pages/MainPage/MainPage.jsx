@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import "./MainPage.css";
-/*
+
 import Picture from "./ateliertsunami.png";
 import PictureTwo from "./bilfidenteobodin.png";
 import PictureThree from "./grebener.png";
@@ -11,8 +11,11 @@ import PictureFive from "./josyma.png";
 import PictureSix from "./marafinal.png";
 import PictureSeven from "./rubypm.png";
 import PictureEight from "./servisautomatik.png";
-*/
-/*
+
+export default function MainPage() {
+  const [currentImage, setCurrentImage] = useState("");
+  const [currentText, setCurrentText] = useState("");
+
   const images = [
     Picture,
     PictureTwo,
@@ -22,20 +25,6 @@ import PictureEight from "./servisautomatik.png";
     PictureSix,
     PictureSeven,
     PictureEight,
-  ];*/
-export default function MainPage() {
-  const [currentImage, setCurrentImage] = useState("");
-  const [currentText, setCurrentText] = useState("");
-
-  const images = [
-    "ateliertsunami",
-    "bilfidenteobodin",
-    "grebener",
-    "hlavacekarchitekti",
-    "josyma",
-    "marafinal",
-    "rubypm",
-    "servisautomatik",
   ];
   const texts = [
     "ATELIER Tsunami s.r.o. Náchod",
@@ -130,8 +119,10 @@ export default function MainPage() {
           <div id="leftBoxArticle">
             Zde jsou zákazníci a firmy se kterými spolupracujeme:
           </div>
-          <div id="randomImagesBoxArticle">
-            <img src={`./src/pages/MainPage/${currentImage}.png`} alt="photo" />
+          <div
+            id="randomImagesBoxArticle"
+            style={{ backgroundImage: `url(${currentImage})` }}
+          >
             <p id="randomImagesBoxArticleText">{currentText}</p>
           </div>
           <div id="two"></div>
