@@ -14,7 +14,7 @@ export default function References() {
               Kontakty
             </Link>
           </h2>
-          <article id="contactsArticle">
+          <article id="contacts">
             <div id="leftBoxArticle">
               <strong>
                 Pro více informací nás kontaktujte na následujících údajích:
@@ -44,7 +44,7 @@ export default function References() {
                   margin: "0px",
                 }}
                 allowFullScreen=""
-                loading="lazy"
+                loading="eager"
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>

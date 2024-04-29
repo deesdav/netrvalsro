@@ -53,7 +53,7 @@ export default function MainPage() {
 
   return (
     <div id="container">
-      <div id="one"></div>
+      <div id="home"></div>
       <header>
         <h1>NETRVAL s.r.o.</h1>
         <p>
@@ -67,10 +67,10 @@ export default function MainPage() {
         <nav>
           <ul>
             <li>
-              <a href="#one">Domovská stránka</a>
+              <a href="#home">Domovská stránka</a>
             </li>
             <li>
-              <a href="#two">Obory</a>
+              <a href="#disciplines">Obory</a>
               <ul className="subnav">
                 <li>
                   <Link to="/healthcare">Zdravotnictví</Link>
@@ -80,6 +80,9 @@ export default function MainPage() {
                 </li>
                 <li>
                   <Link to="/industry">Průmysl</Link>
+                </li>
+                <li>
+                  <Link to="/infrastructure">Infrastruktura</Link>
                 </li>
               </ul>
             </li>
@@ -98,19 +101,17 @@ export default function MainPage() {
           <div id="leftBoxArticle">
             <h3>Zabýváme se:</h3>
             <ul>
-              <li>- projekce elektrických zařízení a řídících systémů </li>
-              <li>- Měření a Regulace</li>
+              <li>Projekce elektrických zařízení a řídících systémů </li>
               <li>
-                - navrhujeme řídící systémy pro průmyslové
+                Měření a Regulace- navrhujeme řídící systémy pro průmyslové
                 aplikace,administrativní objekty, nemocnice, letiště
               </li>
-              <li> - silnoproudé rozvody</li>
               <li>
-                - výpočty osvětlení, protokoly vnějších vlivů, pasportizace
-                stávajících elektroinstalací
+                Silnoproudé rozvody - výpočty osvětlení, protokoly vnějších
+                vlivů, pasportizace stávajících elektroinstalací
               </li>
-              <li>- veřejné osvětlení</li>
-              <li>- technická pomoc</li>
+              <li>Veřejné osvětlení</li>
+              <li>Technická pomoc</li>
             </ul>
           </div>
         </article>
@@ -125,7 +126,6 @@ export default function MainPage() {
           >
             <p id="randomImagesBoxArticleText">{currentText}</p>
           </div>
-          <div id="two"></div>
         </article>
       </div>
       <div id="subContent">
@@ -133,40 +133,34 @@ export default function MainPage() {
           <div id="leftBoxArticle">
             <h2>Zdravotnictví</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatem, at? Doloribus facere, at, eligendi aliquid excepturi
-              nostrum dolor optio ipsum numquam quo ab provident expedita odio,
-              adipisci quis quia a!
+              Vítejte v naší sekci referencí v oblasti zdravotnictví, kde
+              prezentujeme úspěšné projekty a spokojené zákazníky.
             </p>
             <Link id="moreInfo" to={"/healthcare"}>
               Více informací
             </Link>
           </div>
-          <div id="three"></div>
+          <div id="disciplines"></div>
         </article>
         <article id="disciplinesSkodaArticle">
           <div id="leftBoxArticle">
-            <h2>ŠKODA AUTO</h2>
+            <h2>Škoda Auto a.s.</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatem, at? Doloribus facere, at, eligendi aliquid excepturi
-              nostrum dolor optio ipsum numquam quo ab provident expedita odio,
-              adipisci quis quia a!
+              Vítejte v sekci úspěchů a projektů, kde se můžete seznámit s
+              dosavadními úspěchy a spokojenými klienty ve spolupráci s firmou
+              ŠKODA AUTO a.s.
             </p>
             <Link id="moreInfo" to={"/skoda"}>
               Více informací
             </Link>
           </div>
-          <div id="four"></div>
         </article>
         <article id="disciplinesIndustryArticle">
           <div id="leftBoxArticle">
             <h2>Průmysl</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatem, at? Doloribus facere, at, eligendi aliquid excepturi
-              nostrum dolor optio ipsum numquam quo ab provident expedita odio,
-              adipisci quis quia a!
+              Vítejte v naší sekci referencí v oblasti průmyslu, kde
+              prezentujeme úspěšné projekty a spokojené zákazníky.
             </p>
             <Link id="moreInfo" to={"/industry"}>
               Více informací
@@ -174,34 +168,42 @@ export default function MainPage() {
           </div>
           <div id="five"></div>
         </article>
-
+        <article id="disciplinesInfrastructureArticle">
+          <div id="leftBoxArticle">
+            <h2>Infrastruktura</h2>
+            <p>
+              Vítejte v naší sekci referencí v oblasti infrastruktury, kde
+              prezentujeme úspěšné projekty a spokojené zákazníky.
+            </p>
+            <Link id="moreInfo" to={"/infrastructure"}>
+              Více informací
+            </Link>
+          </div>
+          <div id="five"></div>
+        </article>
         <article id="referencesArticle">
           <div id="leftBoxArticle">
             <h2>Reference</h2>
             <p>
-              Zde naleznete přehled našich úspěšných projektů a spokojených
-              zákazníků. Jsme hrdí na naši práci a rádi se s vámi podělíme o
-              naše dosavadní úspěchy. Děkujeme vám za zájem o naše služby a
-              těšíme se na možnost spolupráce
+              Vítejte v naší sekci referencí, kde prezentujeme úspěšné projekty
+              a spokojené zákazníky.
             </p>
             <Link id="moreInfo" to={"/references"}>
               Více informací
             </Link>
           </div>
-          <div id="six"></div>
         </article>
-
         <article id="contactsArticle">
           <div id="leftBoxArticle">
             <h2>Kontakty</h2>
             <p>
-              Pro více informací nás kontaktujte na následujících údajích zde.
+              Vítejte v sekci kontaktních informací, kde najdete potřebné údaje
+              pro kontaktování naší společnosti.
             </p>
             <Link id="moreInfo" to={"/contacts"}>
               Více informací
             </Link>
           </div>
-          <div id="seven"></div>
         </article>
       </div>
       <footer>

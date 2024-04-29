@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
+
+import IndustryPicOne from "./letiste_praha.png";
+import IndustryPicTwo from "./ctPark-Brno-Lisen-3.jpg";
+import IndustryPicThree from "./Toyo2.jpg";
+import IndustryPicFour from "./bridgestone-tatabanya-rolunk.jpg";
 /*
-import IndustryPicOne from "./skodaMuzeum.png";
-import IndustryPicTwo from "./skodaNovýPentagon.png";
-import IndustryPicThree from "./ŠPC_sklad HRC.png";
-import IndustryPicFour from "./LAKOVNA_1.jpg";
 import IndustryPicFive from "./pilotHala.png";
-import IndustryPicSix from "./HRL dopravníkové mosty.png";
 */
 export default function Industry() {
   return (
@@ -21,47 +21,35 @@ export default function Industry() {
               Průmysl
             </Link>
           </h2>
-          <article id="skodaArticle">
+          <article id="industryArticle">
             <div id="leftBoxArticle">
-              Škoda Auto Muzeum - rozšíření a přestavba, MaR, silnoproudé
-              rozvody
+              Letiště Praha - připojení kalorimetrů, rozšíření křižovatky u APC,
+              Security point
             </div>
             <div id="rightBoxArticle">
-              <img src="" alt="photo" />
+              <img src={IndustryPicOne} alt="photo" />
             </div>
           </article>
-          <article id="skodaArticle">
+          <article id="industryArticle">
             <div id="rightBoxArticle">
-              <img src="" alt="photo" />
+              <img src={IndustryPicTwo} alt="photo" />
             </div>
+            <div id="leftBoxArticle">CTP Park Brno hala G47 - MOL Logistic</div>
+          </article>
+          <article id="industryArticle">
             <div id="leftBoxArticle">
-              Kampus Laurin a Klement - VZT zařízení, IRC regulace
+              TOYO Tires Serbia - India Bělehrad - řídící systém
+            </div>
+            <div id="rightBoxArticle">
+              <img src={IndustryPicThree} alt="photo" />
             </div>
           </article>
-          <article id="skodaArticle">
-            <div id="leftBoxArticle">ŠPC / sklad HRC - osvětlení</div>
+          <article id="industryArticle">
             <div id="rightBoxArticle">
-              <img src="" alt="photo" />
-            </div>
-          </article>
-          <article id="skodaArticle">
-            <div id="rightBoxArticle">
-              <img src="" alt="photo" />
-            </div>
-            <div id="leftBoxArticle">Lakovna M19</div>
-          </article>
-          <article id="skodaArticle">
-            <div id="leftBoxArticle">Pilot hala </div>
-            <div id="rightBoxArticle">
-              <img src="" alt="photo" />
-            </div>
-          </article>
-          <article id="skodaArticle">
-            <div id="rightBoxArticle">
-              <img src="" alt="photo" />
+              <img src={IndustryPicFour} alt="photo" />
             </div>
             <div id="leftBoxArticle">
-              HRL dopravníkové mosty - silnoproud, inženýrské sítě
+              Bridgestone Tatabánya Kft. Hungaria - řídící systém
             </div>
           </article>
           <Link id="bottomLink" to={"/"}>
