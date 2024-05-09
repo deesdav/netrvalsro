@@ -1,19 +1,16 @@
 import { Link } from "react-router-dom";
 
+import Footer from "../../components/MainPage/Footer";
+import SubPagesNavigation from "../../components/MainPage/SubPagesNavigation";
+import HeaderContacts from "../../components/Contacts/HeaderContacts";
+
 export default function References() {
   return (
     <>
       <div id="container">
+        <HeaderContacts></HeaderContacts>
+        <SubPagesNavigation></SubPagesNavigation>
         <div id="subPagesContent">
-          <h2>
-            <Link
-              style={{ color: "white", cursor: "pointer" }}
-              to={"/"}
-              title="zpět"
-            >
-              Kontakty
-            </Link>
-          </h2>
           <article id="contacts">
             <div id="leftBoxArticle">
               <strong>
@@ -49,10 +46,9 @@ export default function References() {
               ></iframe>
             </div>
           </article>
-          <Link id="bottomLink" to={"/"}>
-            Zpět na domovskou stránku
-          </Link>
+        
         </div>
+        <Footer></Footer>
       </div>
     </>
   );

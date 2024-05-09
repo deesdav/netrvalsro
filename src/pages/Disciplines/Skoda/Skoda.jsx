@@ -1,26 +1,23 @@
 import { Link } from "react-router-dom";
 
-import SkodaPicOne from "./skodaMuzeum.png";
-import SkodaPicTwo from "./skodaNovýPentagon.png";
-import SkodaPicThree from "./ŠPC_sklad HRC.png";
-import SkodaPicFour from "./LAKOVNA_1.jpg";
-import SkodaPicFive from "./pilotHala.png";
-import SkodaPicSix from "./HRL dopravníkové mosty.png";
+import Footer from "../../../components/MainPage/Footer";
+import SubPagesNavigation from "../../../components/MainPage/SubPagesNavigation";
+import HeaderSkoda from "../../../components/Skoda/HeaderSkoda";
+
+import SkodaPicOne from "./images/skodaMuzeum.png";
+import SkodaPicTwo from "./images/skodaNovýPentagon.png";
+import SkodaPicThree from "./images/ŠPC_sklad HRC.png";
+import SkodaPicFour from "./images/LAKOVNA_1.jpg";
+import SkodaPicFive from "./images/pilotHala.png";
+import SkodaPicSix from "./images/HRL dopravníkové mosty.png";
 
 export default function Skoda() {
   return (
     <>
       <div id="container">
+        <HeaderSkoda></HeaderSkoda>
+        <SubPagesNavigation></SubPagesNavigation>
         <div id="subPagesContent">
-          <h2>
-            <Link
-              style={{ color: "white", cursor: "pointer" }}
-              to={"/"}
-              title="zpět"
-            >
-              Škoda Auto a.s.
-            </Link>
-          </h2>
           <article id="skodaArticle">
             <div id="leftBoxArticle">
               Škoda Auto Muzeum - rozšíření a přestavba, MaR, silnoproudé
@@ -64,10 +61,8 @@ export default function Skoda() {
               HRL dopravníkové mosty - silnoproud, inženýrské sítě
             </div>
           </article>
-          <Link id="bottomLink" to={"/"}>
-            Zpět na domovskou stránku
-          </Link>
         </div>
+        <Footer></Footer>
       </div>
     </>
   );

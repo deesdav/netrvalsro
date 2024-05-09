@@ -1,22 +1,19 @@
 import { Link } from "react-router-dom";
 
+import Footer from "../../components/MainPage/Footer";
+import SubPagesNavigation from "../../components/MainPage/SubPagesNavigation";
+import HeaderReferences from "../../components/References/HeaderReferences";
+
 export default function References() {
   return (
     <>
       <div id="container">
+        <HeaderReferences></HeaderReferences>
+        <SubPagesNavigation></SubPagesNavigation>
         <div id="subPagesContent">
-          <h2>
-            <Link
-              style={{ color: "white", cursor: "pointer" }}
-              to={"/"}
-              title="zpět"
-            >
-              Reference
-            </Link>
-          </h2>
           <article id="referencesArticle">
             <div style={{ width: "100%", padding: "0px" }} id="leftBoxArticle">
-              <div className="table-container">
+              <div style={{overflowX: "auto"}} className="table-container">
                 <h3>Zdravotnické prostory</h3>
                 <table>
                   <thead>
@@ -180,10 +177,9 @@ export default function References() {
               </div>
             </div>
           </article>
-          <Link id="bottomLink" to={"/"}>
-            Zpět na domovskou stránku
-          </Link>
+    
         </div>
+        <Footer></Footer>
       </div>
     </>
   );

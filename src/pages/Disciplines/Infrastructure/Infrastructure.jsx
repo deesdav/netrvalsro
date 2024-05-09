@@ -1,22 +1,19 @@
 import { Link } from "react-router-dom";
 
-import InfrastructurePicOne from "./letckeMuzeumMladaBoleslav.jpg";
-import InfrastructurePicTwo from "./staromestskeNamesti.jpg";
-import InfrastructurePicThree from "./obec_skorkov.jpg";
+import Footer from "../../../components/MainPage/Footer";
+import SubPagesNavigation from "../../../components/MainPage/SubPagesNavigation";
+import HeaderInfrastructure from "../../../components/Infrastructure/HeaderInfrastructure";
+
+import InfrastructurePicOne from "./images/letckeMuzeumMladaBoleslav.jpg";
+import InfrastructurePicTwo from "./images/staromestskeNamesti.jpg";
+import InfrastructurePicThree from "./images/obec_skorkov.jpg";
 export default function Infrastructure() {
   return (
     <>
       <div id="container">
+      <HeaderInfrastructure></HeaderInfrastructure>
+        <SubPagesNavigation></SubPagesNavigation>
         <div id="subPagesContent">
-          <h2>
-            <Link
-              style={{ color: "white", cursor: "pointer" }}
-              to={"/"}
-              title="zpět"
-            >
-              Infrastruktura
-            </Link>
-          </h2>
           <article id="InfrastructureArticle">
             <div id="leftBoxArticle">
               Letecké muzeum Metoděje Vlacha Mladá Boleslav - MaR, Silnoproud
@@ -41,10 +38,8 @@ export default function Infrastructure() {
             </div>
           </article>
 
-          <Link id="bottomLink" to={"/"}>
-            Zpět na domovskou stránku
-          </Link>
         </div>
+        <Footer></Footer>
       </div>
     </>
   );
