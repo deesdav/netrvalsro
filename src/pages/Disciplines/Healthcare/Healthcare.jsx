@@ -19,12 +19,8 @@ export default function Healthcare() {
         <div className="healthcare-content">
           <section className="healthcare-article">
             <div className="healthcare-text">
-              <h2>Oční klinika Kladno - Silnoproud</h2>
-              <p>
-                Detailed description and information about the Oční klinika
-                Kladno project can be added here. This can include technical
-                specifications, key features, and the impact of the project.
-              </p>
+              <h2>Oční klinika Kladno</h2>
+              <p>Silnoproud</p>
             </div>
             <div className="healthcare-image">
               <img src={HealthcarePicOne} alt="Oční klinika Kladno" />
@@ -35,14 +31,8 @@ export default function Healthcare() {
               <img src={HealthcarePicTwo} alt="Nemocnice Sedlčany" />
             </div>
             <div className="healthcare-text">
-              <h2>
-                Nemocnice Sedlčany - Kompletní Rekonstrukce Elektroinstalace
-              </h2>
-              <p>
-                Detailed description and information about the Nemocnice
-                Sedlčany project can be added here. This can include technical
-                specifications, key features, and the impact of the project.
-              </p>
+              <h2>Nemocnice Sedlčany</h2>
+              <p>Kompletní Rekonstrukce Elektroinstalace</p>
             </div>
           </section>
         </div>

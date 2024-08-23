@@ -9,7 +9,7 @@ import IndustryPicThree from "./images/Toyo2.jpg";
 import IndustryPicFour from "./images/bridgestone-tatabanya-rolunk.jpg";
 import Navigation from "../../../components/MainPage/Navigation";
 
-import './Industry.css'; 
+import "./Industry.css";
 
 export default function Industry() {
   return (
@@ -20,10 +20,8 @@ export default function Industry() {
         <div className="industry-content">
           <section className="industry-article">
             <div className="industry-text">
-              <h2>Letiště Praha - Připojení Kalorimetrů</h2>
-              <p>
-                Detailní popis projektu Letiště Praha, zahrnující připojení kalorimetrů, rozšíření křižovatky u APC a Security point.
-              </p>
+              <h2>Letiště Praha</h2>
+              <p>Připojení Kalorimetrů</p>
             </div>
             <div className="industry-image">
               <img src={IndustryPicOne} alt="Letiště Praha" />
@@ -34,18 +32,14 @@ export default function Industry() {
               <img src={IndustryPicTwo} alt="CTP Park Brno" />
             </div>
             <div className="industry-text">
-              <h2>CTP Park Brno - Hala G47 - MOL Logistic</h2>
-              <p>
-                Detailní popis projektu CTP Park Brno, hala G47, včetně informací o MOL Logistic.
-              </p>
+              <h2>CTP Park Brno - Hala G47</h2>
+              <p>MOL Logistic</p>
             </div>
           </section>
           <section className="industry-article">
             <div className="industry-text">
-              <h2>TOYO Tires Serbia - India Bělehrad - Řídící Systém</h2>
-              <p>
-                Detailní popis projektu TOYO Tires Serbia v Indii, Bělehrad, včetně implementace řídícího systému.
-              </p>
+              <h2>TOYO Tires Serbia - India Bělehrad</h2>
+              <p>Řídící Systém</p>
             </div>
             <div className="industry-image">
               <img src={IndustryPicThree} alt="TOYO Tires Serbia" />
@@ -56,10 +50,8 @@ export default function Industry() {
               <img src={IndustryPicFour} alt="Bridgestone Tatabánya" />
             </div>
             <div className="industry-text">
-              <h2>Bridgestone Tatabánya Kft. - Řídící Systém</h2>
-              <p>
-                Detailní popis projektu Bridgestone Tatabánya Kft. v Maďarsku, včetně implementace řídícího systému.
-              </p>
+              <h2>Bridgestone Tatabánya Kft.</h2>
+              <p>Řídící Systém</p>
             </div>
           </section>
         </div>
