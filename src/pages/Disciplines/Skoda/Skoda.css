@@ -1,0 +1,79 @@
+/* Skoda.css */
+
+/* Container for the entire page */
+.skoda-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style for the content area */
+  .skoda-content {
+    flex: 1;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Style for each article section */
+  .skoda-article {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-bottom: 40px;
+    align-items: center;
+  }
+  
+  .skoda-text {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .skoda-text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .skoda-text p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .skoda-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .skoda-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .skoda-article {
+      flex-direction: column;
+    }
+  
+    .skoda-text, .skoda-image {
+      width: 100%;
+    }
+  
+    .skoda-text {
+      padding: 10px;
+    }
+  
+    .skoda-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+  }
+  

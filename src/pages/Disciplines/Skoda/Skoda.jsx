@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 
 import Footer from "../../../components/MainPage/Footer";
-import SubPagesNavigation from "../../../components/MainPage/SubPagesNavigation";
 import HeaderSkoda from "../../../components/Skoda/HeaderSkoda";
 
 import SkodaPicOne from "./images/skodaMuzeum.png";
@@ -10,59 +9,71 @@ import SkodaPicThree from "./images/ŠPC_sklad HRC.png";
 import SkodaPicFour from "./images/LAKOVNA_1.jpg";
 import SkodaPicFive from "./images/pilotHala.png";
 import SkodaPicSix from "./images/HRL dopravníkové mosty.png";
+import Navigation from "../../../components/MainPage/Navigation";
+
+import './Skoda.css';
 
 export default function Skoda() {
   return (
     <>
-      <div id="container">
-        <HeaderSkoda></HeaderSkoda>
-        <SubPagesNavigation></SubPagesNavigation>
-        <div id="subPagesContent">
-          <article id="skodaArticle">
-            <div id="leftBoxArticle">
-              Škoda Auto Muzeum - rozšíření a přestavba, MaR, silnoproudé
-              rozvody
+      <Navigation />
+      <div className="skoda-container">
+        <HeaderSkoda />
+        <div className="skoda-content">
+          <section className="skoda-article">
+            <div className="skoda-text">
+              <h2>Škoda Auto Muzeum</h2>
+              <p>Rozšíření a přestavba, MaR, silnoproudé rozvody</p>
             </div>
-            <div id="rightBoxArticle">
-              <img src={SkodaPicOne} alt="photo" />
+            <div className="skoda-image">
+              <img src={SkodaPicOne} alt="Škoda Auto Muzeum" />
             </div>
-          </article>
-          <article id="skodaArticle">
-            <div id="rightBoxArticle">
-              <img src={SkodaPicTwo} alt="photo" />
+          </section>
+          <section className="skoda-article">
+            <div className="skoda-image">
+              <img src={SkodaPicTwo} alt="Kampus Laurin a Klement" />
             </div>
-            <div id="leftBoxArticle">
-              Kampus Laurin a Klement - VZT zařízení, IRC regulace
+            <div className="skoda-text">
+              <h2>Kampus Laurin a Klement</h2>
+              <p>VZT zařízení, IRC regulace</p>
             </div>
-          </article>
-          <article id="skodaArticle">
-            <div id="leftBoxArticle">ŠPC / sklad HRC - osvětlení</div>
-            <div id="rightBoxArticle">
-              <img src={SkodaPicThree} alt="photo" />
+          </section>
+          <section className="skoda-article">
+            <div className="skoda-text">
+              <h2>ŠPC / sklad HRC</h2>
+              <p>Osvětlení</p>
             </div>
-          </article>
-          <article id="skodaArticle">
-            <div id="rightBoxArticle">
-              <img src={SkodaPicFour} alt="photo" />
+            <div className="skoda-image">
+              <img src={SkodaPicThree} alt="ŠPC / sklad HRC" />
             </div>
-            <div id="leftBoxArticle">Lakovna M19</div>
-          </article>
-          <article id="skodaArticle">
-            <div id="leftBoxArticle">Pilot hala </div>
-            <div id="rightBoxArticle">
-              <img src={SkodaPicFive} alt="photo" />
+          </section>
+          <section className="skoda-article">
+            <div className="skoda-image">
+              <img src={SkodaPicFour} alt="Lakovna M19" />
             </div>
-          </article>
-          <article id="skodaArticle">
-            <div id="rightBoxArticle">
-              <img src={SkodaPicSix} alt="photo" />
+            <div className="skoda-text">
+              <h2>Lakovna M19</h2>
             </div>
-            <div id="leftBoxArticle">
-              HRL dopravníkové mosty - silnoproud, inženýrské sítě
+          </section>
+          <section className="skoda-article">
+            <div className="skoda-text">
+              <h2>Pilot hala</h2>
             </div>
-          </article>
+            <div className="skoda-image">
+              <img src={SkodaPicFive} alt="Pilot hala" />
+            </div>
+          </section>
+          <section className="skoda-article">
+            <div className="skoda-image">
+              <img src={SkodaPicSix} alt="HRL dopravníkové mosty" />
+            </div>
+            <div className="skoda-text">
+              <h2>HRL dopravníkové mosty</h2>
+              <p>Silnoproud, inženýrské sítě</p>
+            </div>
+          </section>
         </div>
-        <Footer></Footer>
+        <Footer />
       </div>
     </>
   );

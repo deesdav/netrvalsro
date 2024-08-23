@@ -27,7 +27,6 @@ export default function AppRoutes() {
             path="/infrastructure"
             element={<Infrastructure></Infrastructure>}
           />
-
           <Route path="/references" element={<References></References>} />
           <Route path="/contacts" element={<Contacts></Contacts>} />
         </Routes>

@@ -1,0 +1,79 @@
+/* Healthcare.css */
+
+/* Container for the entire page */
+.healthcare-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Style for the content area */
+.healthcare-content {
+  flex: 1;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Style for each article section */
+.healthcare-article {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-bottom: 40px;
+  align-items: center;
+}
+
+.healthcare-text {
+  flex: 1;
+  padding: 20px;
+}
+
+.healthcare-text h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.healthcare-text p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.healthcare-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.healthcare-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .healthcare-article {
+    flex-direction: column;
+  }
+
+  .healthcare-text,
+  .healthcare-image {
+    width: 100%;
+  }
+
+  .healthcare-text {
+    padding: 10px;
+  }
+
+  .healthcare-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+}

@@ -1,0 +1,145 @@
+/* Ensure the menu is fixed to the top and spans the entire width */
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffffbd;
+  z-index: 1000; /* Ensures the menu is above other content */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for better visibility */
+}
+
+/* Container to center the menu items and position the hamburger icon */
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px; /* Adjust height as needed */
+  width: 100%;
+  padding: 0 20px; /* Adjust padding for better alignment */
+}
+
+/* Hamburger menu icon */
+.menu-toggle {
+  display: none; /* Hide by default */
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Menu styling */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+/* Center menu items */
+nav ul {
+  flex: 1; /* Take up remaining space */
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  position: relative;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #000000;
+  padding: 19px;
+  transition: 0.5s ease;
+  font-size: 18px; /* Increased font size */
+  font-weight: bold;
+}
+
+nav li a:hover {
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+}
+
+/* Style for submenu */
+.subnav {
+  display: none;
+  position: absolute;
+  width: 200px; /* Adjust width as needed */
+  top: 100%; /* Position directly below parent item */
+  left: 0; /* Align submenu with the left edge of parent item */
+  background-color: #ffffffbd;; /* Match menu color */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for better visibility */
+  z-index: 1000; /* Ensure submenu is above other content */
+}
+
+/* Center-align text in submenu */
+.subnav li {
+  text-align: center; /* Center text in submenu items */
+}
+
+.subnav li a {
+  padding: 10px;
+  font-size: 16px; /* Font size for submenu items */
+  display: block; /* Ensure links fill the submenu width */
+}
+
+/* Show submenu on hover */
+nav ul li:hover .subnav {
+  display: block;
+}
+
+/* Responsive design adjustments */
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* Show hamburger icon on small screens */
+  }
+
+  nav ul {
+    display: none; /* Hide menu by default on small screens */
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    position: absolute;
+    top: 60px; /* Adjust based on menu height */
+    left: 0;
+    background-color: #ffffffbd; /* Ensure background covers content behind */
+  }
+
+  nav ul.active {
+    display: flex; /* Show menu when toggled */
+  }
+
+  nav li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .subnav {
+    position: static; /* Ensure submenu is displayed in flow of content */
+    width: 100%;
+    display: none; /* Hide submenu by default on small screens */
+    background-color: #ffffff00
+  }
+
+  nav li:hover .subnav,
+  nav li:focus-within .subnav {
+    display: block; /* Show submenu when parent is hovered or focused */
+  }
+
+  nav li a {
+    padding: 15px;
+    font-size: 20px; /* Increased font size for small screens */
+  }
+}
+
+/* Hide menu toggle and ensure full-width menu on large screens */
+@media screen and (min-width: 769px) {
+  .menu-toggle {
+    display: none; /* Hide hamburger icon on large screens */
+  }
+
+  nav ul {
+    display: flex; /* Display menu items inline */
+  }
+}

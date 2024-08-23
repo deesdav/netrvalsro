@@ -6,31 +6,47 @@ import HeaderHealthcare from "../../../components/Healthcare/HeaderHealthcare";
 
 import HealthcarePicOne from "./images/ocniKlinikaKladno.png";
 import HealthcarePicTwo from "./images/nemocniceSedlcany.png";
+import Navigation from "../../../components/MainPage/Navigation";
 
-export default function Skoda() {
+import "./Healthcare.css";
+
+export default function Healthcare() {
   return (
     <>
-      <div id="container">
-        <HeaderHealthcare></HeaderHealthcare>
-        <SubPagesNavigation></SubPagesNavigation>
-        <div id="subPagesContent">
-        <article id="healthcareArticle">
-            <div id="leftBoxArticle">Oční klinika Kladno - silnoproud</div>
-            <div id="rightBoxArticle">
-              <img src={HealthcarePicOne} alt="photo" />
+      <Navigation />
+      <div className="healthcare-container">
+        <HeaderHealthcare />
+        <div className="healthcare-content">
+          <section className="healthcare-article">
+            <div className="healthcare-text">
+              <h2>Oční klinika Kladno - Silnoproud</h2>
+              <p>
+                Detailed description and information about the Oční klinika
+                Kladno project can be added here. This can include technical
+                specifications, key features, and the impact of the project.
+              </p>
             </div>
-          </article>
-          <article id="healthcareArticle">
-            <div id="rightBoxArticle">
-              <img src={HealthcarePicTwo} alt="photo" />
+            <div className="healthcare-image">
+              <img src={HealthcarePicOne} alt="Oční klinika Kladno" />
             </div>
-            <div id="leftBoxArticle">
-              Nemocnice Sedlčany - kompletní rekonstrukce elektroinstalace
-              objektu
+          </section>
+          <section className="healthcare-article">
+            <div className="healthcare-image">
+              <img src={HealthcarePicTwo} alt="Nemocnice Sedlčany" />
             </div>
-          </article>
+            <div className="healthcare-text">
+              <h2>
+                Nemocnice Sedlčany - Kompletní Rekonstrukce Elektroinstalace
+              </h2>
+              <p>
+                Detailed description and information about the Nemocnice
+                Sedlčany project can be added here. This can include technical
+                specifications, key features, and the impact of the project.
+              </p>
+            </div>
+          </section>
         </div>
-        <Footer></Footer>
+        <Footer />
       </div>
     </>
   );

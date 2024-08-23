@@ -1,0 +1,122 @@
+/* Basic styling for the footer */
+.footer {
+    background-color: #1a1a1a; /* Darker background color */
+    color: #f5f5f5; /* Light gray text for contrast */
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    position: relative; /* Position relative to place the button absolutely */
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    margin-right: 20px;
+    min-width: 250px;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #0099ff; /* Bright blue for section headings */
+}
+
+.footer-section p {
+    margin: 0 0 10px 0;
+}
+
+.footer-section a {
+    color: #66b3ff; /* Lighter blue for links */
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+/* Remove default list styling */
+.footer-links ul,
+.footer-social ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li,
+.footer-social li {
+    margin-bottom: 10px;
+}
+
+.footer-social ul {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social li {
+    margin-bottom: 0; /* Remove bottom margin for list items */
+}
+
+.footer-social a {
+    color: #f5f5f5; /* Light text color for social icons */
+    font-size: 24px; /* Adjust icon size */
+    text-decoration: none;
+}
+
+.footer-social a:hover {
+    color: #0099ff; /* Change icon color on hover */
+}
+
+.footer-rights {
+    margin-top: 20px;
+}
+
+/* Scroll to Top Button */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0099ff; /* Bright blue background color */
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+.scroll-to-top:hover {
+    background-color: #007acc; /* Darker blue on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .scroll-to-top {
+        bottom: 10px;
+        right: 10px;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+}

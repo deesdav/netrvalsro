@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-
 import Header from "../../components/MainPage/Header";
 import Footer from "../../components/MainPage/Footer";
-import Navigation from "../../components/MainPage/Navigation";
 import "./MainPage.css";
 
 import Picture from "./images/ateliertsunami.png";
@@ -14,10 +12,12 @@ import PictureFive from "./images/josyma.png";
 import PictureSix from "./images/marafinal.png";
 import PictureSeven from "./images/rubypm.png";
 import PictureEight from "./images/servisautomatik.png";
+import Navigation from "../../components/MainPage/Navigation";
 
 export default function MainPage() {
   const [currentImage, setCurrentImage] = useState("");
   const [currentText, setCurrentText] = useState("");
+  const [menuActive, setMenuActive] = useState(false);
 
   const images = [
     Picture,
@@ -37,7 +37,7 @@ export default function MainPage() {
     "JOSYMA MB, s.r.o., Kosmonosy",
     "MaRfinal s.r.o., Sadová",
     "RUBY Project Management s.r.o., Praha",
-    "Servis Automatik s.r.o.,  Kosmonsy ",
+    "Servis Automatik s.r.o., Kosmonsy ",
   ];
 
   useEffect(() => {
@@ -54,125 +54,118 @@ export default function MainPage() {
     return () => clearInterval(intervalId);
   }, [images, texts]);
 
+  const toggleMenu = () => {
+    setMenuActive(!menuActive);
+  };
+
   return (
     <>
-      <div id="container">
-        <div id="home"></div>
-        <Header></Header>
-        <Navigation></Navigation>
-        <div id="mainContent">
+      <Navigation></Navigation>
+      <Header />
+      <main className="main-content">
+        <section className="about-section">
           <h2>ČÍM SE ZABÝVÁME?</h2>
-          <article id="homePageArticle">
-            <div id="leftBoxArticle">
-              <h3>Zabýváme se:</h3>
-              <ul>
-                <li>Projekce elektrických zařízení a řídících systémů </li>
-                <li>
-                  Měření a Regulace- navrhujeme řídící systémy pro průmyslové
-                  aplikace,administrativní objekty, nemocnice, letiště
-                </li>
-                <li>
-                  Silnoproudé rozvody - výpočty osvětlení, protokoly vnějších
-                  vlivů, pasportizace stávajících elektroinstalací
-                </li>
-                <li>Veřejné osvětlení</li>
-                <li>Technická pomoc</li>
-              </ul>
-            </div>
-          </article>
+          <div className="about-content">
+            <h3>Zabýváme se:</h3>
+            <ul>
+              <li>Projekce elektrických zařízení a řídících systémů</li>
+              <li>
+                Měření a Regulace - navrhujeme řídící systémy pro průmyslové
+                aplikace, administrativní objekty, nemocnice, letiště
+              </li>
+              <li>
+                Silnoproudé rozvody - výpočty osvětlení, protokoly vnějších
+                vlivů, pasportizace stávajících elektroinstalací
+              </li>
+              <li>Veřejné osvětlení</li>
+              <li>Technická pomoc</li>
+            </ul>
+          </div>
+        </section>
+
+        <section className="cooperation-section">
           <h2>SPOLUPRÁCE</h2>
-          <article id="cooperationPageArticle">
-            <div id="leftBoxArticle">
-              Zde jsou zákazníci a firmy se kterými spolupracujeme:
-            </div>
+          <div className="cooperation-content">
+            <p>Zde jsou zákazníci a firmy se kterými spolupracujeme:</p>
             <div
-              id="randomImagesBoxArticle"
+              className="cooperation-image"
               style={{ backgroundImage: `url(${currentImage})` }}
             >
-              <p id="randomImagesBoxArticleText">{currentText}</p>
+              <p className="cooperation-text">{currentText}</p>
             </div>
-          </article>
-        </div>
-        <div id="subContent">
-          <article id="disciplinesHealthcareArticle">
-            <div id="leftBoxArticle">
-              <h2>Zdravotnictví</h2>
-              <p>
-                Vítejte v naší sekci referencí v oblasti zdravotnictví, kde
-                prezentujeme úspěšné projekty a spokojené zákazníky.
-              </p>
-              <Link id="moreInfo" to={"/healthcare"}>
-                Více informací
-              </Link>
-            </div>
-            <div id="disciplines"></div>
-          </article>
-          <article id="disciplinesSkodaArticle">
-            <div id="leftBoxArticle">
-              <h2>Škoda Auto a.s.</h2>
-              <p>
-                Vítejte v sekci úspěchů a projektů, kde se můžete seznámit s
-                dosavadními úspěchy a spokojenými klienty ve spolupráci s firmou
-                ŠKODA AUTO a.s.
-              </p>
-              <Link id="moreInfo" to={"/skoda"}>
-                Více informací
-              </Link>
-            </div>
-          </article>
-          <article id="disciplinesIndustryArticle">
-            <div id="leftBoxArticle">
-              <h2>Průmysl</h2>
-              <p>
-                Vítejte v naší sekci referencí v oblasti průmyslu, kde
-                prezentujeme úspěšné projekty a spokojené zákazníky.
-              </p>
-              <Link id="moreInfo" to={"/industry"}>
-                Více informací
-              </Link>
-            </div>
-            <div id="five"></div>
-          </article>
-          <article id="disciplinesInfrastructureArticle">
-            <div id="leftBoxArticle">
-              <h2>Infrastruktura</h2>
-              <p>
-                Vítejte v naší sekci referencí v oblasti infrastruktury, kde
-                prezentujeme úspěšné projekty a spokojené zákazníky.
-              </p>
-              <Link id="moreInfo" to={"/infrastructure"}>
-                Více informací
-              </Link>
-            </div>
-            <div id="five"></div>
-          </article>
-          <article id="referencesArticle">
-            <div id="leftBoxArticle">
-              <h2>Reference</h2>
-              <p>
-                Vítejte v naší sekci referencí, kde prezentujeme úspěšné
-                projekty a spokojené zákazníky.
-              </p>
-              <Link id="moreInfo" to={"/references"}>
-                Více informací
-              </Link>
-            </div>
-          </article>
-          <article id="contactsArticle">
-            <div id="leftBoxArticle">
-              <h2>Kontakty</h2>
-              <p>
-                Vítejte v sekci kontaktních informací, kde najdete potřebné
-                údaje pro kontaktování naší společnosti.
-              </p>
-              <Link id="moreInfo" to={"/contacts"}>
-                Více informací
-              </Link>
-            </div>
-          </article>
-        </div>
-        <Footer></Footer>
-      </div>
+          </div>
+        </section>
+
+        <section className="disciplines-section">
+          <div className="discipline-card">
+            <h2>Zdravotnictví</h2>
+            <p>
+              Vítejte v naší sekci referencí v oblasti zdravotnictví, kde
+              prezentujeme úspěšné projekty a spokojené zákazníky.
+            </p>
+            <Link className="more-info" to={"/healthcare"}>
+              Více informací
+            </Link>
+          </div>
+
+          <div className="discipline-card">
+            <h2>Škoda Auto a.s.</h2>
+            <p>
+              Vítejte v sekci úspěchů a projektů, kde se můžete seznámit s
+              dosavadními úspěchy a spokojenými klienty ve spolupráci s firmou
+              ŠKODA AUTO a.s.
+            </p>
+            <Link className="more-info" to={"/skoda"}>
+              Více informací
+            </Link>
+          </div>
+
+          <div className="discipline-card">
+            <h2>Průmysl</h2>
+            <p>
+              Vítejte v naší sekci referencí v oblasti průmyslu, kde
+              prezentujeme úspěšné projekty a spokojené zákazníky.
+            </p>
+            <Link className="more-info" to={"/industry"}>
+              Více informací
+            </Link>
+          </div>
+
+          <div className="discipline-card">
+            <h2>Infrastruktura</h2>
+            <p>
+              Vítejte v naší sekci referencí v oblasti infrastruktury, kde
+              prezentujeme úspěšné projekty a spokojené zákazníky.
+            </p>
+            <Link className="more-info" to={"/infrastructure"}>
+              Více informací
+            </Link>
+          </div>
+
+          <div className="discipline-card">
+            <h2>Reference</h2>
+            <p>
+              Vítejte v naší sekci referencí, kde prezentujeme úspěšné projekty
+              a spokojené zákazníky.
+            </p>
+            <Link className="more-info" to={"/references"}>
+              Více informací
+            </Link>
+          </div>
+
+          <div className="discipline-card">
+            <h2>Kontakty</h2>
+            <p>
+              Vítejte v sekci kontaktních informací, kde najdete potřebné údaje
+              pro kontaktování naší společnosti.
+            </p>
+            <Link className="more-info" to={"/contacts"}>
+              Více informací
+            </Link>
+          </div>
+        </section>
+      </main>
+      <Footer />
     </>
   );
 }

@@ -1,57 +1,69 @@
 import { Link } from "react-router-dom";
 
 import Footer from "../../../components/MainPage/Footer";
-import SubPagesNavigation from "../../../components/MainPage/SubPagesNavigation";
 import HeaderIndustry from "../../../components/Industry/HeaderIndustry";
 
 import IndustryPicOne from "./images/letiste_praha.png";
 import IndustryPicTwo from "./images/ctPark-Brno-Lisen-3.jpg";
 import IndustryPicThree from "./images/Toyo2.jpg";
 import IndustryPicFour from "./images/bridgestone-tatabanya-rolunk.jpg";
-/*
-import IndustryPicFive from "./pilotHala.png";
-*/
+import Navigation from "../../../components/MainPage/Navigation";
+
+import './Industry.css'; 
+
 export default function Industry() {
   return (
     <>
-      <div id="container">
-      <HeaderIndustry></HeaderIndustry>
-        <SubPagesNavigation></SubPagesNavigation>
-        <div id="subPagesContent">
-          <article id="industryArticle">
-            <div id="leftBoxArticle">
-              Letiště Praha - připojení kalorimetrů, rozšíření křižovatky u APC,
-              Security point
+      <Navigation />
+      <div className="industry-container">
+        <HeaderIndustry />
+        <div className="industry-content">
+          <section className="industry-article">
+            <div className="industry-text">
+              <h2>Letiště Praha - Připojení Kalorimetrů</h2>
+              <p>
+                Detailní popis projektu Letiště Praha, zahrnující připojení kalorimetrů, rozšíření křižovatky u APC a Security point.
+              </p>
             </div>
-            <div id="rightBoxArticle">
-              <img src={IndustryPicOne} alt="photo" />
+            <div className="industry-image">
+              <img src={IndustryPicOne} alt="Letiště Praha" />
             </div>
-          </article>
-          <article id="industryArticle">
-            <div id="rightBoxArticle">
-              <img src={IndustryPicTwo} alt="photo" />
+          </section>
+          <section className="industry-article">
+            <div className="industry-image">
+              <img src={IndustryPicTwo} alt="CTP Park Brno" />
             </div>
-            <div id="leftBoxArticle">CTP Park Brno hala G47 - MOL Logistic</div>
-          </article>
-          <article id="industryArticle">
-            <div id="leftBoxArticle">
-              TOYO Tires Serbia - India Bělehrad - řídící systém
+            <div className="industry-text">
+              <h2>CTP Park Brno - Hala G47 - MOL Logistic</h2>
+              <p>
+                Detailní popis projektu CTP Park Brno, hala G47, včetně informací o MOL Logistic.
+              </p>
             </div>
-            <div id="rightBoxArticle">
-              <img src={IndustryPicThree} alt="photo" />
+          </section>
+          <section className="industry-article">
+            <div className="industry-text">
+              <h2>TOYO Tires Serbia - India Bělehrad - Řídící Systém</h2>
+              <p>
+                Detailní popis projektu TOYO Tires Serbia v Indii, Bělehrad, včetně implementace řídícího systému.
+              </p>
             </div>
-          </article>
-          <article id="industryArticle">
-            <div id="rightBoxArticle">
-              <img src={IndustryPicFour} alt="photo" />
+            <div className="industry-image">
+              <img src={IndustryPicThree} alt="TOYO Tires Serbia" />
             </div>
-            <div id="leftBoxArticle">
-              Bridgestone Tatabánya Kft. Hungaria - řídící systém
+          </section>
+          <section className="industry-article">
+            <div className="industry-image">
+              <img src={IndustryPicFour} alt="Bridgestone Tatabánya" />
             </div>
-          </article>
-        
+            <div className="industry-text">
+              <h2>Bridgestone Tatabánya Kft. - Řídící Systém</h2>
+              <p>
+                Detailní popis projektu Bridgestone Tatabánya Kft. v Maďarsku, včetně implementace řídícího systému.
+              </p>
+            </div>
+          </section>
         </div>
-        <Footer></Footer>
+        <Footer />
       </div>
     </>
   );

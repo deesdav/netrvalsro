@@ -1,45 +1,54 @@
 import { Link } from "react-router-dom";
 
 import Footer from "../../../components/MainPage/Footer";
-import SubPagesNavigation from "../../../components/MainPage/SubPagesNavigation";
 import HeaderInfrastructure from "../../../components/Infrastructure/HeaderInfrastructure";
 
 import InfrastructurePicOne from "./images/letckeMuzeumMladaBoleslav.jpg";
 import InfrastructurePicTwo from "./images/staromestskeNamesti.jpg";
 import InfrastructurePicThree from "./images/obec_skorkov.jpg";
+import Navigation from "../../../components/MainPage/Navigation";
+
+import './Infrastructure.css'; 
+
 export default function Infrastructure() {
   return (
     <>
-      <div id="container">
-      <HeaderInfrastructure></HeaderInfrastructure>
-        <SubPagesNavigation></SubPagesNavigation>
-        <div id="subPagesContent">
-          <article id="InfrastructureArticle">
-            <div id="leftBoxArticle">
-              Letecké muzeum Metoděje Vlacha Mladá Boleslav - MaR, Silnoproud
+      <Navigation />
+      <div className="infrastructure-container">
+        <HeaderInfrastructure />
+        <div className="infrastructure-content">
+          <section className="infrastructure-article">
+            <div className="infrastructure-text">
+              <h2>Letecké muzeum Metoděje Vlacha Mladá Boleslav</h2>
+              <p>
+                MaR, Silnoproud
+              </p>
             </div>
-            <div id="rightBoxArticle">
-              <img src={InfrastructurePicOne} alt="photo" />
+            <div className="infrastructure-image">
+              <img src={InfrastructurePicOne} alt="Letecké muzeum Metoděje Vlacha" />
             </div>
-          </article>
-          <article id="InfrastructureArticle">
-            <div id="rightBoxArticle">
-              <img src={InfrastructurePicTwo} alt="photo" />
+          </section>
+          <section className="infrastructure-article">
+            <div className="infrastructure-image">
+              <img src={InfrastructurePicTwo} alt="Staroměstské náměstí" />
             </div>
-            <div id="leftBoxArticle">
-              Revitalizace Staroměstské náměstí Mladá Boleslav - silnoproud,
-              slaboproud
+            <div className="infrastructure-text">
+              <h2>Revitalizace Staroměstské náměstí Mladá Boleslav</h2>
+              <p>
+                Silnoproud, slaboproud
+              </p>
             </div>
-          </article>
-          <article id="InfrastructureArticle">
-            <div id="leftBoxArticle">Veřejné osvětlení obec Skorkov</div>
-            <div id="rightBoxArticle">
-              <img src={InfrastructurePicThree} alt="photo" />
+          </section>
+          <section className="infrastructure-article">
+            <div className="infrastructure-text">
+              <h2>Veřejné osvětlení obec Skorkov</h2>
             </div>
-          </article>
-
+            <div className="infrastructure-image">
+              <img src={InfrastructurePicThree} alt="Veřejné osvětlení obec Skorkov" />
+            </div>
+          </section>
         </div>
-        <Footer></Footer>
+        <Footer />
       </div>
     </>
   );
