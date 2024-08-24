@@ -61,7 +61,7 @@ cd netrvalsro
 Nainstalujte závislosti:
 
 ```bash
-npm install
+npm install react-router-dom
 ```
 
 Spusťte aplikaci:
