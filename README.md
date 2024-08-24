@@ -101,7 +101,7 @@ Pokud máte zájem přispět k tomuto projektu, prosím, postupujte podle těcht
 Tento projekt je licencován pod [MIT licencí](#).
 
 ```css
-Tento kód můžete zkopírovat přímo do svého README.md souboru. Obsahuje vše, co jste požadovali, ve správném markdown formátu.
+MIT Licence umožňuje volné použití, kopírování, úpravy a distribuci tohoto projektu. Další podmínky jsou uvedeny v textu licence.
 ```
 
 ## Odkaz na zdarma webovou doménu
