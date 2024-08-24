@@ -58,9 +58,13 @@
   
   /* Responsive Design */
   @media (max-width: 768px) {
-    .infrastructure-article {
+    .infrastructure-article:nth-child(even) {
+      flex-direction: column-reverse;
+    }
+    .infrastructure-article:nth-child(odd) {
       flex-direction: column;
     }
+  
   
     .infrastructure-text, .infrastructure-image {
       width: 100%;

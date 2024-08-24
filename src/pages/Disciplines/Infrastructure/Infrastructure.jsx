@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 
-import Footer from "../../../components/MainPage/Footer";
+import Footer from "../../../components/Footer/Footer";
 import HeaderInfrastructure from "../../../components/Infrastructure/HeaderInfrastructure";
 
 import InfrastructurePicOne from "./images/letckeMuzeumMladaBoleslav.jpg";
 import InfrastructurePicTwo from "./images/staromestskeNamesti.jpg";
 import InfrastructurePicThree from "./images/obec_skorkov.jpg";
-import Navigation from "../../../components/MainPage/Navigation";
+import Navigation from "../../../components/Navigation/Navigation";
 
 import "./Infrastructure.css";
 

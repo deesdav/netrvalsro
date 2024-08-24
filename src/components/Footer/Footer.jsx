@@ -40,7 +40,7 @@ export default function Footer() {
         <div className="footer-section footer-social">
           <h3>Sledujte nás</h3>
           <ul>
-            <li><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+            <li><a href="https://www.facebook.com/tomas.netrval.10" target="_blank" rel="noopener noreferrer">Facebook</a></li>
             <li><a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a></li>
             <li><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
           </ul>

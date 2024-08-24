@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import Header from "../../components/MainPage/Header";
-import Footer from "../../components/MainPage/Footer";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
 import "./MainPage.css";
 
 import Picture from "./images/ateliertsunami.png";
@@ -12,7 +12,7 @@ import PictureFive from "./images/josyma.png";
 import PictureSix from "./images/marafinal.png";
 import PictureSeven from "./images/rubypm.png";
 import PictureEight from "./images/servisautomatik.png";
-import Navigation from "../../components/MainPage/Navigation";
+import Navigation from "../../components/Navigation/Navigation";
 
 export default function MainPage() {
   const [currentImage, setCurrentImage] = useState("");
@@ -61,7 +61,7 @@ export default function MainPage() {
   return (
     <>
       <Navigation></Navigation>
-      <Header />
+      <Header></Header>
       <main className="main-content">
         <section className="about-section">
           <h2>ČÍM SE ZABÝVÁME?</h2>

@@ -1,14 +1,13 @@
 import { Link } from "react-router-dom";
 
-import Footer from "../../../components/MainPage/Footer";
-import SubPagesNavigation from "../../../components/MainPage/SubPagesNavigation";
 import HeaderHealthcare from "../../../components/Healthcare/HeaderHealthcare";
 
 import HealthcarePicOne from "./images/ocniKlinikaKladno.png";
 import HealthcarePicTwo from "./images/nemocniceSedlcany.png";
-import Navigation from "../../../components/MainPage/Navigation";
+import Navigation from "../../../components/Navigation/Navigation";
 
 import "./Healthcare.css";
+import Footer from "../../../components/Footer/Footer";
 
 export default function Healthcare() {
   return (
@@ -36,7 +35,7 @@ export default function Healthcare() {
             </div>
           </section>
         </div>
-        <Footer />
+        <Footer></Footer>
       </div>
     </>
   );

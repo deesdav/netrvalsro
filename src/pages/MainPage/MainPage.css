@@ -269,11 +269,6 @@ nav ul li:hover .subnav {
   }
 }
 
-@media (max-width: 768px) {
-  header {
-    height: 425px; /* Set header height for mobile screens */
-  }
-}
 header {
   background-color: rgba(0, 0, 0, 0.8);
   background-image: url(./images/headerBG.jpg);
@@ -285,8 +280,21 @@ header {
   height: 850px;
   width: auto;
   padding: 0;
-  display: flex;
-  flex-direction: row;
+}
+
+@media (max-width: 768px) {
+  header {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 450px;
+  }
+  header h2 {
+    font-size: 30px;
+  }
+
 }
 
 #headerMask {
@@ -312,7 +320,6 @@ header h2 {
   text-align: center;
   display: block;
   margin: auto;
-  font-size: 45px;
   width: 100%;
   padding: 1em;
   padding-top: 0px;

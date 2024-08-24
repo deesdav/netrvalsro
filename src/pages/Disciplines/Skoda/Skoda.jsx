@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import Footer from "../../../components/MainPage/Footer";
+import Footer from "../../../components/Footer/Footer";
 import HeaderSkoda from "../../../components/Skoda/HeaderSkoda";
 
 import SkodaPicOne from "./images/skodaMuzeum.png";
@@ -9,7 +9,7 @@ import SkodaPicThree from "./images/ŠPC_sklad HRC.png";
 import SkodaPicFour from "./images/LAKOVNA_1.jpg";
 import SkodaPicFive from "./images/pilotHala.png";
 import SkodaPicSix from "./images/HRL dopravníkové mosty.png";
-import Navigation from "../../../components/MainPage/Navigation";
+import Navigation from "../../../components/Navigation/Navigation";
 
 import './Skoda.css';
 

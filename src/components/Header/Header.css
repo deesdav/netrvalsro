@@ -1,0 +1,50 @@
+header {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+header h2 {
+    font-size: 70px;
+  }
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  header {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 450px;
+  }
+  header h1 {
+    padding-top: 100px;
+  }
+  header p {
+    margin-top: 100px;
+  }
+  
+
+  h1 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+  }
+
+  p {
+    font-size: 1em;
+    line-height: 1.4;
+  }
+}

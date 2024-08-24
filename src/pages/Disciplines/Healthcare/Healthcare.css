@@ -58,7 +58,10 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .healthcare-article {
+  .healthcare-article:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+  .healthcare-article:nth-child(odd) {
     flex-direction: column;
   }
 

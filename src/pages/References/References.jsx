@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import Footer from "../../components/MainPage/Footer";
+import Footer from "../../components/Footer/Footer";
 import HeaderReferences from "../../components/References/HeaderReferences";
-import Navigation from "../../components/MainPage/Navigation";
+import Navigation from "../../components/Navigation/Navigation";
 import "./References.css"; // Import the CSS file for styling
 
 export default function References() {

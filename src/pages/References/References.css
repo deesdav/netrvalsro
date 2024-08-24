@@ -19,7 +19,7 @@
   .references-table {
     background: #f9f9f9;
     border-radius: 8px;
-    padding: 20px;
+    padding: 20px 5px 20px 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
@@ -59,11 +59,11 @@
   /* Responsive Design */
   @media (max-width: 768px) {
     table {
-      font-size: 14px;
+      font-size: 12px;
     }
   
     th, td {
-      padding: 8px;
+      padding: 5px;
     }
 
     .references-content {

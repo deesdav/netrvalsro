@@ -58,7 +58,10 @@
   
   /* Responsive Design */
   @media (max-width: 768px) {
-    .skoda-article {
+    .skoda-article:nth-child(even) {
+      flex-direction: column-reverse;
+    }
+    .skoda-article:nth-child(odd) {
       flex-direction: column;
     }
   

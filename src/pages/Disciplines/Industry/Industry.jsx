@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 
-import Footer from "../../../components/MainPage/Footer";
+import Footer from "../../../components/Footer/Footer";
 import HeaderIndustry from "../../../components/Industry/HeaderIndustry";
 
 import IndustryPicOne from "./images/letiste_praha.png";
 import IndustryPicTwo from "./images/ctPark-Brno-Lisen-3.jpg";
 import IndustryPicThree from "./images/Toyo2.jpg";
 import IndustryPicFour from "./images/bridgestone-tatabanya-rolunk.jpg";
-import Navigation from "../../../components/MainPage/Navigation";
+import Navigation from "../../../components/Navigation/Navigation";
 
 import "./Industry.css";
 

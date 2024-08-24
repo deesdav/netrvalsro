@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import Footer from "../../components/MainPage/Footer";
+import Footer from "../../components/Footer/Footer";
 import HeaderContacts from "../../components/Contacts/HeaderContacts";
-import Navigation from "../../components/MainPage/Navigation";
+import Navigation from "../../components/Navigation/Navigation";
 import './Contacts.css'; // Import the CSS file for styling
 
 export default function Contacts() {
