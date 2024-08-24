@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import Footer from "../../components/MainPage/Footer";
 import HeaderReferences from "../../components/References/HeaderReferences";
 import Navigation from "../../components/MainPage/Navigation";
-import './References.css'; // Import the CSS file for styling
+import "./References.css"; // Import the CSS file for styling
 
 export default function References() {
   return (
@@ -31,7 +31,9 @@ export default function References() {
                     <td>elektro silnoproud</td>
                   </tr>
                   <tr>
-                    <td>VFN Karlovo nám. pavilon A12 2.int. klinika, katetrizace</td>
+                    <td>
+                      VFN Karlovo nám. pavilon A12 2.int. klinika, katetrizace
+                    </td>
                     <td>2007</td>
                     <td>ARCHAX</td>
                     <td>elektro silnoproud</td>
@@ -45,11 +47,15 @@ export default function References() {
                   <tr>
                     <td>FN Bulovka pav.13 Ortopedie, operační sály , ARO</td>
                     <td>2007</td>
-                    <td>Proj. Atelier pro architekturu a pozemní stavby Praha</td>
+                    <td>
+                      Proj. Atelier pro architekturu a pozemní stavby Praha
+                    </td>
                     <td>elektro silnoproud</td>
                   </tr>
                   <tr>
-                    <td>Nemocnice Mělník, pav. Chirurgie 2.,3. patro operační sály</td>
+                    <td>
+                      Nemocnice Mělník, pav. Chirurgie 2.,3. patro operační sály
+                    </td>
                     <td>2008</td>
                     <td>přímo pro investora</td>
                     <td>elektro silnoproud</td>
@@ -79,7 +85,11 @@ export default function References() {
                     <td>elektro silnoproud</td>
                   </tr>
                   <tr>
-                    <td>Klinika Dr. Pírka Ml. Boleslav, přístavba severního křídla, 2x ortopedický , 1x chirurgický operační sál, sterilizační centrum</td>
+                    <td>
+                      Klinika Dr. Pírka Ml. Boleslav, přístavba severního
+                      křídla, 2x ortopedický , 1x chirurgický operační sál,
+                      sterilizační centrum
+                    </td>
                     <td>2012</td>
                     <td>ROIN s.r.o.</td>
                     <td>elektro silnoproud</td>
@@ -91,7 +101,9 @@ export default function References() {
                     <td>elektro silnoproud</td>
                   </tr>
                   <tr>
-                    <td>Klinika Dr. Pírka Nový objekt, ambulance, oper. Sály</td>
+                    <td>
+                      Klinika Dr. Pírka Nový objekt, ambulance, oper. Sály
+                    </td>
                     <td>2018</td>
                     <td>DELTAPLAN Praha</td>
                     <td>elektro silnoproud</td>
@@ -103,31 +115,45 @@ export default function References() {
                     <td></td>
                   </tr>
                   <tr>
-                    <td>Průběžná rekonstrukce Oblastní nemocnice Mladá Boleslav - různé pavilony a účelové prostory</td>
+                    <td>
+                      Průběžná rekonstrukce Oblastní nemocnice Mladá Boleslav -
+                      různé pavilony a účelové prostory
+                    </td>
                     <td>1990-2010</td>
                     <td>přímo pro investora</td>
                     <td>elektro silnoproud</td>
                   </tr>
                   <tr>
-                    <td>Oblastní nemocnice Mladá Boleslav - pavilon 5 - Onkologie a nuleární medicína</td>
+                    <td>
+                      Oblastní nemocnice Mladá Boleslav - pavilon 5 - Onkologie
+                      a nuleární medicína
+                    </td>
                     <td>2014</td>
                     <td>HELIKA a.s.</td>
                     <td>elektro silnoproud, slaboproud, měření a regulace</td>
                   </tr>
                   <tr>
-                    <td>Nemocnice Královké Vinohrady - ortopedie - zákrokový sál</td>
+                    <td>
+                      Nemocnice Královké Vinohrady - ortopedie - zákrokový sál
+                    </td>
                     <td>2015</td>
                     <td>HELIKA a.s.</td>
                     <td>měření a regulace</td>
                   </tr>
                   <tr>
-                    <td>Oblastní nemocnice Mladá Boleslav - pavilon 4 - rekonstrukce</td>
+                    <td>
+                      Oblastní nemocnice Mladá Boleslav - pavilon 4 -
+                      rekonstrukce
+                    </td>
                     <td>2017</td>
                     <td>HELIKA a.s.</td>
                     <td>elektro silnoproud, slaboproud, měření a regulace</td>
                   </tr>
                   <tr>
-                    <td>Oblastní nemocnice Mladá Boleslav - pavilon 6 - rekonstrukce</td>
+                    <td>
+                      Oblastní nemocnice Mladá Boleslav - pavilon 6 -
+                      rekonstrukce
+                    </td>
                     <td>2018</td>
                     <td>HELIKA a.s.</td>
                     <td>elektro silnoproud, slaboproud, měření a regulace</td>

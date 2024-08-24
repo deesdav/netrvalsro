@@ -65,5 +65,9 @@
     th, td {
       padding: 8px;
     }
+
+    .references-content {
+      padding: 0px;
+    }
   }
   
