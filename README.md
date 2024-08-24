@@ -1,4 +1,4 @@
-# Webový projekt: Projekce a Inženýrství
+# Webový projekt: Firma NETRVAL s.r.o.
 
 Tento projekt je zaměřen na prezentaci služeb a referencí společnosti, která se zabývá projekcí elektrických zařízení a řídících systémů. Cílem webové aplikace je poskytovat přehledné informace o oblastech činnosti, spolupracujících firmách, a dosavadních úspěších.
 
