@@ -12,6 +12,7 @@ Tento projekt je zaměřen na prezentaci služeb a referencí společnosti, kter
 - [Styling](#styling)
 - [Přispívání](#přispívání)
 - [Licence](#licence)
+- [Odkaz na zdarma webovou doménu](#odkaz-na-zdarma-webovou-doménu)
 
 ## Technologie
 
@@ -102,3 +103,7 @@ Tento projekt je licencován pod [MIT licencí](#).
 ```css
 Tento kód můžete zkopírovat přímo do svého README.md souboru. Obsahuje vše, co jste požadovali, ve správném markdown formátu.
 ```
+
+## Odkaz na zdarma webovou doménu
+
+Webová doména: [didntlastsro.g6.cz](https://didntlastsro.g6.cz/)
