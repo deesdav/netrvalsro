@@ -65,9 +65,9 @@ nav li a:hover {
   display: none;
   position: absolute;
   width: 200px; /* Adjust width as needed */
-  top: 100%; /* Position directly below parent item */
-  left: 0; /* Align submenu with the left edge of parent item */
-  background-color: #ffffffbd;; /* Match menu color */
+  top: 160%; /* Position directly below parent item */
+  left: -65%; /* Align submenu with the left edge of parent item */
+  background-color: #ffffffbd; /* Match menu color */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for better visibility */
   z-index: 1000; /* Ensure submenu is above other content */
 }
@@ -75,6 +75,12 @@ nav li a:hover {
 /* Center-align text in submenu */
 .subnav li {
   text-align: center; /* Center text in submenu items */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.595);
+}
+
+.subnav li:last-child {
+  text-align: center; /* Center text in submenu items */
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
 }
 
 .subnav li a {
@@ -113,13 +119,20 @@ nav ul li:hover .subnav {
   nav li {
     width: 100%;
     text-align: center;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    padding: 10px;
   }
 
   .subnav {
     position: static; /* Ensure submenu is displayed in flow of content */
     width: 100%;
     display: none; /* Hide submenu by default on small screens */
-    background-color: #ffffff00
+    background-color: #ffffff00;
+    box-shadow: none; /* Optional: add a shadow for better visibility */
+  }
+
+  .subnav li {
+    border: none;
   }
 
   nav li:hover .subnav,
