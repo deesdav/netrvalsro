@@ -49,13 +49,13 @@ src/
 Naklonujte tento repozitář do vašeho místního počítače:
 
 ```bash
-git clone https://github.com/vase-repozitar/projekce-inzenyrstvi.git
+git clone https://github.com/deesdav/netrvalsro.git
 ```
 
 Přesuňte se do adresáře projektu:
 
 ```bash
-cd projekce-inzenyrstvi
+cd netrvalsro
 ```
 
 Nainstalujte závislosti:
@@ -67,7 +67,7 @@ npm install
 Spusťte aplikaci:
 
 ```bash
-npm start
+npm run dev
 ```
 
 ## Hlavní funkce
