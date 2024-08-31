@@ -14,6 +14,11 @@ import PictureSeven from "./images/rubypm.png";
 import PictureEight from "./images/servisautomatik.png";
 import Navigation from "../../components/Navigation/Navigation";
 
+import MarDevice from "./images/marDevice.png";
+import LogoOne from "./images/Honeywell-Logo-500x281.png";
+import LogoTwo from "./images/sauter-logo-vector.png";
+import LogoThree from "./images/Siemens-logo.svg.png";
+
 export default function MainPage() {
   const [currentImage, setCurrentImage] = useState("");
   const [currentText, setCurrentText] = useState("");
@@ -82,7 +87,42 @@ export default function MainPage() {
             </ul>
           </div>
         </section>
-
+        <section className="mar-section">
+          <h2>CO JE MĚŘENÍ A REGULACE?</h2>
+          <div className="mar-content">
+            <p>
+              <strong> Měření a regulace</strong> je obor, který se zabývá
+              sledováním hodnot, jako je teplota nebo tlak, a automatickým
+              řízením zařízení tak, aby vše fungovalo správně a efektivně.
+              Používá se například v průmyslu nebo při řízení vytápění budov.
+            </p>
+            <div className="mar-article">
+              <div className="mar-text">
+                <h2>Zařízení pro měření a regulaci - EAGLEHAWK NX</h2>
+                <p>
+                  EAGLEHAWK NX poskytuje výkon a inteligenci pro provoz vašeho
+                  zařízení pro vytápění, ventilaci, klimatizaci, osvětlení a
+                  další aplikace v budovách.
+                </p>
+              </div>
+              <div className="mar-image">
+                <img src={MarDevice} alt="MaR zařízení - EAGLEHAWK NX" />
+              </div>
+            </div>
+          </div>
+          <h3>Firmy, které se pohybují v oboru Měření a regulace:</h3>
+          <div className="logosMaR">
+            <a href="https://www.honeywell.com/cz/en">
+              <img src={LogoOne} alt="Honeywell" />
+            </a>
+            <a href="https://www.sauter.cz/">
+              <img src={LogoTwo} alt="Sauter" />
+            </a>
+            <a href="https://www.siemens.com/cz/cs.html">
+              <img src={LogoThree} alt="Siemens" />
+            </a>
+          </div>
+        </section>
         <section className="cooperation-section">
           <h2>SPOLUPRÁCE</h2>
           <div className="cooperation-content">

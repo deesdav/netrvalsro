@@ -21,7 +21,10 @@ export default function Industry() {
           <section className="industry-article">
             <div className="industry-text">
               <h2>Letiště Praha</h2>
-              <p>  <strong>Zde jsme udělali: </strong> připojení kalorimetrů</p>
+              <p>
+                <strong>Zde jsme udělali: </strong> připojení kalorimetrů,
+                rozšíření křižovatky u APC a security point{" "}
+              </p>
             </div>
             <div className="industry-image">
               <img src={IndustryPicOne} alt="Letiště Praha" />
@@ -33,13 +36,17 @@ export default function Industry() {
             </div>
             <div className="industry-text">
               <h2>CTP Park Brno - Hala G47</h2>
-              <p>  <strong>Zde jsme dělali pro: </strong> MOL Logistics</p>
+              <p>
+                <strong>Zde jsme dělali pro: </strong> MOL Logistics
+              </p>
             </div>
           </section>
           <section className="industry-article">
             <div className="industry-text">
               <h2>TOYO Tires Serbia - India Bělehrad</h2>
-              <p> <strong>Zde jsme udělali: </strong> řídící systém</p>
+              <p>
+                <strong>Zde jsme udělali: </strong> řídící systém
+              </p>
             </div>
             <div className="industry-image">
               <img src={IndustryPicThree} alt="TOYO Tires Serbia" />
@@ -51,7 +58,9 @@ export default function Industry() {
             </div>
             <div className="industry-text">
               <h2>Bridgestone Tatabánya Kft.</h2>
-              <p> <strong>Zde jsme udělali: </strong> řídící systém</p>
+              <p>
+                <strong>Zde jsme udělali: </strong> řídící systém
+              </p>
             </div>
           </section>
         </div>

@@ -9,6 +9,10 @@ import SkodaPicThree from "./images/ŠPC_sklad HRC.png";
 import SkodaPicFour from "./images/LAKOVNA_1.jpg";
 import SkodaPicFive from "./images/pilotHala.png";
 import SkodaPicSix from "./images/HRL dopravníkové mosty.png";
+import SkodaPicSeven from "./images/m14hala.jpg";
+import SkodaPicEight from "./images/m9hala.png";
+import SkodaPicNine from "./images/cvvcesana.png";
+
 import Navigation from "../../../components/Navigation/Navigation";
 
 import "./Skoda.css";
@@ -34,6 +38,28 @@ export default function Skoda() {
           </section>
           <section className="skoda-article">
             <div className="skoda-image">
+              <img src={SkodaPicSeven} alt="Hala M14" />
+            </div>
+            <div className="skoda-text">
+              <h2>Hala M14</h2>
+              <p>
+                <strong>Zde jsme udělali: </strong> osvětlení, měření a regulaci
+              </p>
+            </div>
+          </section>
+          <section className="skoda-article">
+            <div className="skoda-text">
+              <h2>Hala M9</h2>
+              <p>
+                <strong>Zde jsme udělali: </strong> měření a regulaci
+              </p>
+            </div>
+            <div className="skoda-image">
+              <img src={SkodaPicEight} alt="Hala M9" />
+            </div>
+          </section>
+          <section className="skoda-article">
+            <div className="skoda-image">
               <img src={SkodaPicTwo} alt="Kampus Laurin a Klement" />
             </div>
             <div className="skoda-text">
@@ -47,7 +73,6 @@ export default function Skoda() {
             <div className="skoda-text">
               <h2>ŠPC / sklad HRC</h2>
               <p>
-                {" "}
                 <strong>Zde jsme udělali: </strong> osvětlení
               </p>
             </div>
@@ -80,6 +105,17 @@ export default function Skoda() {
               <p>
                 <strong>Zde jsme udělali: </strong> silnoproud a inženýrské sítě
               </p>
+            </div>
+          </section>
+          <section className="skoda-article">
+            <div className="skoda-text">
+              <h2>CVV Česana</h2>
+              <p>
+                <strong>Zde jsme udělali: </strong> protipovodňovou stěnu
+              </p>
+            </div>
+            <div className="skoda-image">
+              <img src={SkodaPicNine} alt="CVV Česana" />
             </div>
           </section>
         </div>

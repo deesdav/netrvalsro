@@ -157,6 +157,87 @@ nav ul li:hover .subnav {
   margin-left: 20px;
 }
 
+/* mar section styling */
+.mar-section {
+  margin-bottom: 40px;
+}
+
+.mar-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+.mar-content h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.mar-content p {
+  list-style-type: none;
+  text-align: left;
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.mar-article {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-bottom: 40px;
+  align-items: center;
+}
+
+.mar-text {
+  flex: 1;
+  padding: 20px;
+}
+
+.mar-text h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.mar-text p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.mar-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mar-image img {
+  max-width: 100%;
+  height: auto;
+  width: 500px;
+  border-radius: 8px;
+}
+.logosMaR {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.logosMaR img {
+  max-width: 100%;
+  height: auto;
+  width: 300px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.logosMaR img:hover {
+  transform: translateY(-5px);
+}
+
 /* Cooperation section styling */
 .cooperation-section {
   margin-bottom: 40px;
@@ -263,6 +344,7 @@ nav ul li:hover .subnav {
   }
 
   .about-section,
+  .mar-section,
   .cooperation-section,
   .disciplines-section {
     margin-bottom: 30px;
@@ -294,7 +376,6 @@ header {
   header h2 {
     font-size: 30px;
   }
-
 }
 
 #headerMask {
@@ -517,5 +598,33 @@ header p {
   .contact-section {
     grid-template-columns: 1fr;
     gap: 20px;
+  }
+  .mar-article {
+    flex-direction: column;
+  }
+  .mar-text,
+  .mar-image {
+    width: 100%;
+  }
+
+  .mar-text {
+    padding: 10px;
+  }
+
+  .mar-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  .logosMaR {
+    flex-direction: column;
+  }
+  .logosMaR img {
+    max-width: 100%;
+    width: 150px;
+    padding: 0px;
+    margin: 0px;
+    height: auto;
+    border-radius: 4px;
   }
 }
