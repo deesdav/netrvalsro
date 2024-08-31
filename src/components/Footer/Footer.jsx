@@ -22,7 +22,7 @@ export default function Footer() {
           </p>
         </div>
         <div className="footer-section footer-links">
-          <h3>Odkazy</h3>
+          <h3>Navigace</h3>
           <ul>
             <li><Link to="/healthcare">Zdravotnictví</Link></li>
             <li><Link to="/skoda">ŠKODA AUTO</Link></li>

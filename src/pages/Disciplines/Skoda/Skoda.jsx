@@ -11,7 +11,7 @@ import SkodaPicFive from "./images/pilotHala.png";
 import SkodaPicSix from "./images/HRL dopravníkové mosty.png";
 import Navigation from "../../../components/Navigation/Navigation";
 
-import './Skoda.css';
+import "./Skoda.css";
 
 export default function Skoda() {
   return (
@@ -23,7 +23,10 @@ export default function Skoda() {
           <section className="skoda-article">
             <div className="skoda-text">
               <h2>Škoda Auto Muzeum</h2>
-              <p>Rozšíření a přestavba, MaR, silnoproudé rozvody</p>
+              <p>
+                <strong>Zde jsme udělali: </strong> silnoproudé rozvody,
+                rozšíření a přestavbu, měření a regulaci
+              </p>
             </div>
             <div className="skoda-image">
               <img src={SkodaPicOne} alt="Škoda Auto Muzeum" />
@@ -35,13 +38,18 @@ export default function Skoda() {
             </div>
             <div className="skoda-text">
               <h2>Kampus Laurin a Klement</h2>
-              <p>VZT zařízení, IRC regulace</p>
+              <p>
+                <strong>Zde jsme udělali: </strong> VZT zařízení a IRC regulace
+              </p>
             </div>
           </section>
           <section className="skoda-article">
             <div className="skoda-text">
               <h2>ŠPC / sklad HRC</h2>
-              <p>Osvětlení</p>
+              <p>
+                {" "}
+                <strong>Zde jsme udělali: </strong> osvětlení
+              </p>
             </div>
             <div className="skoda-image">
               <img src={SkodaPicThree} alt="ŠPC / sklad HRC" />
@@ -69,7 +77,9 @@ export default function Skoda() {
             </div>
             <div className="skoda-text">
               <h2>HRL dopravníkové mosty</h2>
-              <p>Silnoproud, inženýrské sítě</p>
+              <p>
+                <strong>Zde jsme udělali: </strong> silnoproud a inženýrské sítě
+              </p>
             </div>
           </section>
         </div>

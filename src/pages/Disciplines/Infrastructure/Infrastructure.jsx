@@ -20,7 +20,10 @@ export default function Infrastructure() {
           <section className="infrastructure-article">
             <div className="infrastructure-text">
               <h2>Letecké muzeum Metoděje Vlacha Mladá Boleslav</h2>
-              <p>MaR, Silnoproud</p>
+              <p>
+                <strong>Zde jsme udělali: </strong> silnoproud, měření a
+                regulaci
+              </p>
             </div>
             <div className="infrastructure-image">
               <img
@@ -35,13 +38,13 @@ export default function Infrastructure() {
             </div>
             <div className="infrastructure-text">
               <h2>Revitalizace Staroměstské náměstí Mladá Boleslav</h2>
-              <p>Silnoproud, slaboproud</p>
+              <p> <strong>Zde jsme udělali: </strong> silnoproud a slaboproud</p>
             </div>
           </section>
           <section className="infrastructure-article">
             <div className="infrastructure-text">
               <h2>Obec Skorkov</h2>
-              <p>Veřejné osvětlení </p>
+              <p> <strong>Zde jsme udělali: </strong> veřejné osvětlení </p>
             </div>
             <div className="infrastructure-image">
               <img

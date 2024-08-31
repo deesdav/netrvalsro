@@ -19,7 +19,7 @@ export default function Healthcare() {
           <section className="healthcare-article">
             <div className="healthcare-text">
               <h2>Oční klinika Kladno</h2>
-              <p>Silnoproud</p>
+              <p> <strong>Zde jsme udělali: </strong> silnoproud</p>
             </div>
             <div className="healthcare-image">
               <img src={HealthcarePicOne} alt="Oční klinika Kladno" />
@@ -31,7 +31,10 @@ export default function Healthcare() {
             </div>
             <div className="healthcare-text">
               <h2>Nemocnice Sedlčany</h2>
-              <p>Kompletní Rekonstrukce Elektroinstalace</p>
+              <p>
+                <strong>Zde jsme udělali: </strong> kompletní rekonstrukci
+                elektroinstalace
+              </p>
             </div>
           </section>
         </div>
